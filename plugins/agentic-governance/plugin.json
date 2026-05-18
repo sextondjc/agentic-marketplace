@@ -1,0 +1,11 @@
+{
+  "name": "agentic-governance",
+  "description": "Governance and customization audit plugin with governance agents and skills.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Agentic Workspace"
+  },
+  "commands": "prompts/",
+  "skills": "skills/",
+  "agents": "agents/"
+}

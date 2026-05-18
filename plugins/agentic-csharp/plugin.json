@@ -1,0 +1,10 @@
+{
+  "name": "agentic-csharp",
+  "description": "C# and .NET-focused agent plugin bundle from the agentic workspace.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Agentic Workspace"
+  },
+  "skills": "skills/",
+  "agents": "agents/"
+}
