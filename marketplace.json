@@ -1,0 +1,25 @@
+{
+  "name": "agentic-local-marketplace",
+  "owner": {
+    "name": "Agentic Local",
+    "email": "local@example.invalid"
+  },
+  "metadata": {
+    "description": "Local marketplace for agentic governance plugins.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "agentic-governance",
+      "description": "Governance and customization audit plugin with governance agents and skills.",
+      "version": "1.0.0",
+      "source": "plugins/agentic-governance"
+    },
+    {
+      "name": "agentic-csharp",
+      "description": "C# and .NET-focused agent plugin bundle from the agentic workspace.",
+      "version": "1.0.0",
+      "source": "plugins/agentic-csharp"
+    }
+  ]
+}
