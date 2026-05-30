@@ -1,0 +1,168 @@
+{
+  "pluginId": "PLG-01",
+  "pluginName": "core-intake-governance",
+  "pluginVersion": "1.0.0",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "e744880d0d40adb8d162dc0732598f15ab35bf977a1f3024470419381e6e86cf",
+      "purpose": "Plugin manifest metadata and dependency declarations."
+    },
+    {
+      "path": "skills/work-intake-governance/references/source-catalog.md",
+      "sha256": "8c921869f4defd54ad5b1dc700bcff6de604a17d8761f2abbf1aba608bece454",
+      "purpose": "Supporting artifact for skill 'work-intake-governance'."
+    },
+    {
+      "path": "skills/work-intake-governance/SKILL.md",
+      "sha256": "e1cb699d69788e4baeb7232c0b08f1bf5ac5f9b9ad08cd1117c8fc26795503b7",
+      "purpose": "Specializes intake classification and admission control."
+    },
+    {
+      "path": "skills/taxonomy-tag-registry/references/naming-conventions.json",
+      "sha256": "dce0280fb67c8eb57f346d9c239118bb5ed8b1d78e4457b0dd01a62f4cc61e35",
+      "purpose": "Supporting artifact for skill 'taxonomy-tag-registry'."
+    },
+    {
+      "path": "skills/taxonomy-tag-registry/SKILL.md",
+      "sha256": "d85432a822c38ab7a3fde223070d2f220ee40b192cb528e3c3d27c79ee45b4b9",
+      "purpose": "Maintains tag consistency across artifacts."
+    },
+    {
+      "path": "skills/task-research/references/research-template.md",
+      "sha256": "bc670c280b20b176f5a4dfdc14260dd7bcf593b13ba71f846df01588a863b0bc",
+      "purpose": "Supporting artifact for skill 'task-research'."
+    },
+    {
+      "path": "skills/task-research/SKILL.md",
+      "sha256": "f350b583d8fad5c3ca0b2524ee81ddce3a8973ed283549329703e7110a2d3f25",
+      "purpose": "Supports bounded research before implementation."
+    },
+    {
+      "path": "skills/task-execution/references/subagent-dispatch-patterns.md",
+      "sha256": "7cc89dd6f7956d5f05640eb39266beb4ab89b08c612798be4257abcafed28e04",
+      "purpose": "Supporting artifact for skill 'task-execution'."
+    },
+    {
+      "path": "skills/task-execution/references/command-patterns.md",
+      "sha256": "16f0c2a7d1d7fe187b37db3899f70d0abc5b8b2634737050dc3e20451fc69d1d",
+      "purpose": "Supporting artifact for skill 'task-execution'."
+    },
+    {
+      "path": "skills/task-execution/spec-reviewer-prompt.md",
+      "sha256": "631980e472eec5394de8b89b69d432e54fd3f7f523ecf9afa7eb4cda0c9b2baf",
+      "purpose": "Supporting artifact for skill 'task-execution'."
+    },
+    {
+      "path": "skills/task-execution/SKILL.md",
+      "sha256": "bc5b20267a6cce065cbc006485d15026406e990dffde33ab99a96c637539a25f",
+      "purpose": "Executes approved plans with traceability."
+    },
+    {
+      "path": "skills/task-execution/implementer-prompt.md",
+      "sha256": "a416193f881e5a712c988fffabfe1d5a97bffcd091eb95577c84fe2136588617",
+      "purpose": "Supporting artifact for skill 'task-execution'."
+    },
+    {
+      "path": "skills/task-execution/code-quality-reviewer-prompt.md",
+      "sha256": "1ee2481f76b22f1bf01d78e64164850ddac8b238f856c1d5b05617c70b134531",
+      "purpose": "Supporting artifact for skill 'task-execution'."
+    },
+    {
+      "path": "skills/scope-change-control/references/source-catalog.md",
+      "sha256": "9611c3704844a784eac438b10a041b08f2e6c42cac46cb9a0375ef73a1cd245a",
+      "purpose": "Supporting artifact for skill 'scope-change-control'."
+    },
+    {
+      "path": "skills/scope-change-control/SKILL.md",
+      "sha256": "3eb29081b8b9f6007160396eb8f6ddd97811a35b1f1818ea871f574ed3c209ce",
+      "purpose": "Governs adds, swaps, and descopes during delivery."
+    },
+    {
+      "path": "skills/route-customization/references/output-template.md",
+      "sha256": "8bcec8c80ddbbeacdc1f9f4a6217d8247920e85d32c0174eb94c2bb6f0203e48",
+      "purpose": "Supporting artifact for skill 'route-customization'."
+    },
+    {
+      "path": "skills/route-customization/SKILL.md",
+      "sha256": "f2af3bedd821e082867293f0866e282e2aa34ff39c80e898cecb0a19acb7c3b2",
+      "purpose": "Maps requests to correct customization type."
+    },
+    {
+      "path": "skills/plans/SKILL.md",
+      "sha256": "2f8ad36643e85de3f135b0f95f97fd4eca247970b3b273b1f5e514acba215909",
+      "purpose": "Supports checkpointed plan execution in dedicated sessions."
+    },
+    {
+      "path": "skills/compose-skills/references/routing-benchmark-cases.json",
+      "sha256": "cab26107b131ba616a1996c6b82a76c5ecc5c48af8590e63deb6211624fdacce",
+      "purpose": "Supporting artifact for skill 'compose-skills'."
+    },
+    {
+      "path": "skills/compose-skills/references/capability-routing-registry.json",
+      "sha256": "38fb2c148d40c953c2e9341843ef22829af24fe16abb7e233d7783b65c598ea1",
+      "purpose": "Supporting artifact for skill 'compose-skills'."
+    },
+    {
+      "path": "skills/compose-skills/SKILL.md",
+      "sha256": "fbe439579fa2f3ee995dabc55c2c1ef5a2c6dcf231defcf1c45e677196bfb95a",
+      "purpose": "Defines deterministic multi-skill composition contracts."
+    },
+    {
+      "path": "prompts/run-delivery-pattern.prompt.md",
+      "sha256": "9b76e9361f442bbd9ffe6a049691131d16fd5a889cf94713a8930beb59ee9076",
+      "purpose": "Encodes approved delivery pattern invocation."
+    },
+    {
+      "path": "prompts/review-project.prompt.md",
+      "sha256": "6e1791999309b2cce187c7752f48baf83bc585ee093095fb05cd237b5987a92f",
+      "purpose": "Provides pre-execution review posture check."
+    },
+    {
+      "path": "prompts/execute-delivery.prompt.md",
+      "sha256": "3f95cb30768d39d2f3dd4df306c94c28be1124184ed3e192fac11e5b7d2b0039",
+      "purpose": "Supports controlled execution resumption."
+    },
+    {
+      "path": "instructions/secure-coding.instructions.md",
+      "sha256": "647b74096502508a655973b6161ac10f646620bc63a92beec5084376a7e7630c",
+      "purpose": "Provides cross-cutting security defaults."
+    },
+    {
+      "path": "instructions/request-economy.instructions.md",
+      "sha256": "c0b5d857d31be675a1795344a12ec10bd393ea4ae6dac532f28afdea3d920268",
+      "purpose": "Enforces bounded discovery and efficient operation."
+    },
+    {
+      "path": "instructions/governance-release.instructions.md",
+      "sha256": "de32e578be6976e5761ba008abd410ac70484826914b08b93f7b0cb198c1d8e3",
+      "purpose": "Defines approval and release evidence policy."
+    },
+    {
+      "path": "instructions/governance-naming-conventions.instructions.md",
+      "sha256": "d3de0dee13265b59d79e1c3b5c3fa6cb1d69211dda19d94fcdc89a8ec143d5c9",
+      "purpose": "Standardizes asset naming and discoverability conventions."
+    },
+    {
+      "path": "instructions/governance-lifecycle.instructions.md",
+      "sha256": "c51a9a1ed54894a3cc704bbc098069ea7e0a03125479436089522e9df1a0f529",
+      "purpose": "Defines lane controls and handoff traceability."
+    },
+    {
+      "path": "agents/orchestrator.agent.md",
+      "sha256": "069094b3998006a9911bae2c38b9122b738b78d71581ad87bd719c91fa32f747",
+      "purpose": "Mandatory intake and routing authority for deterministic workflows."
+    },
+    {
+      "path": "skills/writing-plans/plan-document-reviewer-prompt.md",
+      "sha256": "6fce2aa83c63715697e9dd86050c820716100b91efbd9f12bab8477ecc060256",
+      "purpose": "Supporting artifact for skill 'writing-plans'."
+    },
+    {
+      "path": "skills/writing-plans/SKILL.md",
+      "sha256": "83923567781721ea050232c8cf452b85491af650ef4fa537e45be38434c69047",
+      "purpose": "Produces execution-ready plans when absent."
+    }
+  ]
+}

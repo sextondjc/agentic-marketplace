@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0",
+  "id": "sql-server-dba",
+  "name": "sql-server-dba",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "description": "SQL Server operations, tuning, automation, and security.",
+  "capabilities": [
+    "SQL Server operations, tuning, automation, and security."
+  ],
+  "dependencies": [
+    "core-intake-governance",
+    "governance-review-audit"
+  ],
+  "assets": {
+    "agents": [
+      "sql-dba.agent.md"
+    ],
+    "instructions": [
+      "sql-dba.instructions.md",
+      "secure-coding.instructions.md"
+    ],
+    "prompts": [
+      "review-project.prompt.md"
+    ],
+    "skills": [
+      "sql-server-orchestrator",
+      "sql-server-automation",
+      "sql-server-diagnostics",
+      "sql-server-query-tuning",
+      "sql-server-security",
+      "sql-server-standards"
+    ]
+  }
+}

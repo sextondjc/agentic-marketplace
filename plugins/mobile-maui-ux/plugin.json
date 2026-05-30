@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0",
+  "id": "mobile-maui-ux",
+  "name": "mobile-maui-ux",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "description": "Mobile MAUI capability with UX, resilience, and release readiness.",
+  "capabilities": [
+    "Mobile MAUI capability with UX, resilience, and release readiness."
+  ],
+  "dependencies": [
+    "core-intake-governance",
+    "governance-review-audit"
+  ],
+  "assets": {
+    "agents": [
+      "mobile-frontend-engineer.agent.md",
+      "ux-designer.agent.md"
+    ],
+    "instructions": [
+      "mobile-frontend.instructions.md",
+      "ux-design.instructions.md",
+      "secure-coding.instructions.md"
+    ],
+    "prompts": [
+      "execute-delivery.prompt.md"
+    ],
+    "skills": [
+      "build-mobile-apps",
+      "build-maui-apps",
+      "mobile-orchestrator",
+      "mobile-accessibility-quality-gate",
+      "mobile-offline-resilience",
+      "mobile-performance-quality-gate",
+      "mobile-release-readiness",
+      "design-mobile-ux",
+      "prototype-mobile-ui",
+      "usability-test-scripts"
+    ]
+  }
+}

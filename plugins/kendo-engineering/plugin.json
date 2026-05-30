@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0",
+  "id": "kendo-engineering",
+  "name": "kendo-engineering",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "description": "Kendo UI implementation, performance, and governance gates.",
+  "capabilities": [
+    "Kendo UI implementation, performance, and governance gates."
+  ],
+  "dependencies": [
+    "core-intake-governance",
+    "governance-review-audit",
+    "web-frontend-ux"
+  ],
+  "assets": {
+    "agents": [
+      "web-frontend-engineer.agent.md"
+    ],
+    "instructions": [
+      "web-frontend.instructions.md",
+      "secure-coding.instructions.md"
+    ],
+    "prompts": [
+      "execute-delivery.prompt.md"
+    ],
+    "skills": [
+      "kendo-orchestrator",
+      "kendo-ui-source-curation",
+      "kendo-ui-core",
+      "kendo-ui-data-binding",
+      "kendo-ui-grid-advanced",
+      "kendo-ui-charts-dataviz",
+      "kendo-ui-export-printing",
+      "kendo-ui-localization",
+      "kendo-ui-state-persistence",
+      "kendo-ui-real-time-updates",
+      "kendo-ui-upload-file-workflows",
+      "kendo-ui-observability",
+      "kendo-ui-theming",
+      "kendo-ui-accessibility",
+      "kendo-ui-forms",
+      "kendo-ui-security",
+      "kendo-ui-performance",
+      "kendo-ui-migration",
+      "kendo-ui-testing",
+      "kendo-ui-ci-integration",
+      "kendo-ui-quality-gate"
+    ]
+  }
+}

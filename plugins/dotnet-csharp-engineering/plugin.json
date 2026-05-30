@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0",
+  "id": "dotnet-csharp-engineering",
+  "name": "dotnet-csharp-engineering",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "description": ".NET/C# implementation, architecture, data access, and testing.",
+  "capabilities": [
+    ".NET/C# implementation, architecture, data access, and testing."
+  ],
+  "dependencies": [
+    "core-intake-governance",
+    "governance-review-audit"
+  ],
+  "assets": {
+    "agents": [
+      "csharp-engineer.agent.md",
+      "defect-debugger.agent.md",
+      "architecture-designer.agent.md",
+      "code-reviewer.agent.md"
+    ],
+    "instructions": [
+      "architecture.instructions.md",
+      "async-programming.instructions.md",
+      "csharp.instructions.md",
+      "namespace-boundaries.instructions.md",
+      "syrx.instructions.md",
+      "validation.instructions.md",
+      "testing-strategy.instructions.md",
+      "secure-coding.instructions.md"
+    ],
+    "prompts": [
+      "execute-testing-xunit.prompt.md"
+    ],
+    "skills": [
+      "csharp-orchestrator",
+      "build-blazor-web-apps",
+      "build-maui-apps",
+      "dotnet-refactor",
+      "dotnet-resilience",
+      "domain-design",
+      "layer-boundaries",
+      "async-programming",
+      "syrx-data-access",
+      "syrx-validation",
+      "data-design",
+      "api-design",
+      "scaffold-dotnet",
+      "csharp-architecture-quality-gate",
+      "csharp-async-quality-gate",
+      "csharp-data-access-quality-gate",
+      "csharp-language-quality-gate",
+      "csharp-testing-quality-gate",
+      "csharp-release-quality-gate",
+      "test-driven-development",
+      "current-test-coverage",
+      "xunit-async-testing",
+      "xunit-ci-observability",
+      "xunit-fixture-lifecycle",
+      "xunit-moq-collaboration",
+      "xunit-orchestrator",
+      "xunit-quality-gate",
+      "xunit-runner-platforms",
+      "xunit-source-curation",
+      "xunit-test-design",
+      "xunit-theory-data-stability",
+      "xunit-traits-and-selection",
+      "xunit-v2-v3-migration",
+      "branch-completion"
+    ]
+  }
+}

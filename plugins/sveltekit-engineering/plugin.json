@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0",
+  "id": "sveltekit-engineering",
+  "name": "sveltekit-engineering",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "description": "SvelteKit framework capability for routing, server endpoints, state, auth, and deployment workflows.",
+  "capabilities": [
+    "SvelteKit framework capability for routing, server endpoints, state, auth, and deployment workflows."
+  ],
+  "dependencies": [
+    "core-intake-governance",
+    "governance-review-audit"
+  ],
+  "assets": {
+    "agents": [
+      "web-frontend-engineer.agent.md"
+    ],
+    "instructions": [
+      "web-frontend.instructions.md",
+      "secure-coding.instructions.md"
+    ],
+    "prompts": [
+      "execute-delivery.prompt.md"
+    ],
+    "skills": [
+      "sveltekit-orchestrator",
+      "sveltekit-routing",
+      "sveltekit-advanced-routing",
+      "sveltekit-load",
+      "sveltekit-actions",
+      "sveltekit-server-endpoints",
+      "sveltekit-hooks",
+      "sveltekit-errors",
+      "sveltekit-state-management",
+      "sveltekit-auth",
+      "sveltekit-environment",
+      "sveltekit-configuration",
+      "sveltekit-page-options",
+      "sveltekit-adapters",
+      "sveltekit-testing",
+      "sveltekit-observability",
+      "sveltekit-packaging"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0",
+  "id": "compendium-sync-docs",
+  "name": "compendium-sync-docs",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "description": "Compendium synchronization, technical docs, and curation workflows.",
+  "capabilities": [
+    "Compendium synchronization, technical docs, and curation workflows."
+  ],
+  "dependencies": [
+    "core-intake-governance",
+    "governance-review-audit"
+  ],
+  "assets": {
+    "agents": [
+      "workspace-scaffolder.agent.md",
+      "governance-briefer.agent.md"
+    ],
+    "instructions": [
+      "technical-docs.instructions.md",
+      "governance-lifecycle.instructions.md"
+    ],
+    "prompts": [
+      "curate-copilot.prompt.md",
+      "generate-readme.prompt.md",
+      "librarian.prompt.md",
+      "write-component-docs.prompt.md"
+    ],
+    "skills": [
+      "curate-copilot-instructions",
+      "index-docs",
+      "librarian",
+      "write-technical-docs",
+      "sync-customizations",
+      "sync-skills",
+      "sync-editorconfig",
+      "powershell-script-library",
+      "prune-sync-assets",
+      "prune-doc-artifacts"
+    ]
+  }
+}

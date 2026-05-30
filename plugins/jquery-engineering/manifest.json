@@ -1,0 +1,80 @@
+{
+  "pluginId": "PLG-14",
+  "pluginName": "jquery-engineering",
+  "pluginVersion": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:42:32.1011507Z",
+  "digestAlgorithm": "SHA-256",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "3b3fddf77f408b559784d36d6f4eb42127c6b0e586624a257f553e4cb2e6a506"
+    },
+    {
+      "path": "skills/jquery-security/SKILL.md",
+      "sha256": "5657215e6e171bc1b470f4e310148f78b93e0c043b3a436cc51116e4ddd7ac28"
+    },
+    {
+      "path": "skills/jquery-quality-gate/SKILL.md",
+      "sha256": "2601e5a1a85db4b75b86e9bf7625c26ce79328b2ccc514a4c369b941f1ed2dfe"
+    },
+    {
+      "path": "skills/jquery-plugins/SKILL.md",
+      "sha256": "9e53d317ef8d5972d4a35ef4d0202fbb9c0eff4663023b407879a083699507f5"
+    },
+    {
+      "path": "skills/jquery-performance/SKILL.md",
+      "sha256": "03514ce2d134e28b6c1745a4b2756390b54cb6a305c46e420d7ab069a3119a09"
+    },
+    {
+      "path": "skills/jquery-orchestrator/SKILL.md",
+      "sha256": "47eae704bca6da6eee4d8ba56970e7272883a391d5630c3396722a85d3315500"
+    },
+    {
+      "path": "skills/jquery-migration/SKILL.md",
+      "sha256": "a2ae8607d24c7f4da80449fa42f1ff3119b8a461c0560f2a1627c7112a331653"
+    },
+    {
+      "path": "skills/jquery-source-curation/SKILL.md",
+      "sha256": "5d5a32c20ce4c0b42aa2f90de99bf833c8ab1dfdb393be027d2b009a40fc8f06"
+    },
+    {
+      "path": "skills/jquery-events/SKILL.md",
+      "sha256": "e34623fd5c215dd3d477b8f4b4da55c02e14578e75ec7b0ce8ea24d03b618f02"
+    },
+    {
+      "path": "skills/jquery-ci-integration/SKILL.md",
+      "sha256": "3150ce88e727c51ddbc1c422e768a80d38947c04f4dfba3eb1078d625118be4e"
+    },
+    {
+      "path": "skills/jquery-ajax/SKILL.md",
+      "sha256": "0f264162803cd713e9bf7761fab15e90319e2e938e8e6240fb24f63c2e23fd0d"
+    },
+    {
+      "path": "prompts/execute-delivery.prompt.md",
+      "sha256": "3f95cb30768d39d2f3dd4df306c94c28be1124184ed3e192fac11e5b7d2b0039"
+    },
+    {
+      "path": "instructions/web-frontend.instructions.md",
+      "sha256": "49c14c2334becf67c199bc510f28f1872e817eaa826d13eedf109fdde26ab763"
+    },
+    {
+      "path": "instructions/secure-coding.instructions.md",
+      "sha256": "647b74096502508a655973b6161ac10f646620bc63a92beec5084376a7e7630c"
+    },
+    {
+      "path": "agents/web-frontend-engineer.agent.md",
+      "sha256": "651a9cabd397454c2f0356886e5968ec09b35a2610480222a6a6a08651ab995e"
+    },
+    {
+      "path": "skills/jquery-core/SKILL.md",
+      "sha256": "318a2a249c06d31f5c08178958a7cdda0c23bdbd3eec11392d8cd68b2e552b06"
+    },
+    {
+      "path": "skills/jquery-testing/SKILL.md",
+      "sha256": "5d852b67e3ee82252856bd0ff526d4c07c9cf961f9fd45b1206fb977b275c168"
+    }
+  ],
+  "aggregateDigest": "1ddaef082c9c183c2875e81121b81c01ee0706541fe399a23d2bc29e7e6fe1dd"
+}
