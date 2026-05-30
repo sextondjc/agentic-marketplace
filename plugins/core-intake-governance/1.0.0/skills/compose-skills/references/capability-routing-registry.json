@@ -1,0 +1,1601 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2026-04-12",
+  "description": "Comprehensive capability routing registry mapping user intents to skill compositions. Used by orchestrator to automatically invoke relevant skills based on request keywords and context.",
+  "capabilities": [
+    {
+      "id": "planning-and-specification",
+      "name": "Planning & Specification",
+      "keywords": ["plan", "planning", "strategy", "roadmap", "prd", "product requirements", "specification", "spec", "requirements"],
+      "requiredSkills": ["writing-plans"],
+      "optionalSkills": ["prd-generator", "adr-generator", "critical-thinking", "task-research"],
+      "excludedSkills": ["task-execution"],
+      "description": "Planning, requirement gathering, PRD authoring, and strategy development before implementation."
+    },
+    {
+      "id": "research",
+      "name": "Research & Discovery",
+      "keywords": ["research", "investigate", "discovery", "explore", "learn", "learning", "curriculum", "deep learning", "topic"],
+      "requiredSkills": ["task-research"],
+      "optionalSkills": ["learn-topics", "critical-thinking"],
+      "excludedSkills": [],
+      "description": "Research-focused work including investigation, exploration, and learning path development."
+    },
+    {
+      "id": "implementation",
+      "name": "Implementation & Execution",
+      "keywords": ["implement", "code", "build", "write", "execute", "change", "modify", "create"],
+      "requiredSkills": ["task-execution"],
+      "optionalSkills": ["test-driven-development", "plans", "async-programming", "request-code-review"],
+      "excludedSkills": ["writing-plans"],
+      "description": "Code implementation, feature building, and execution of approved plans."
+    },
+    {
+      "id": "testing-and-coverage",
+      "name": "Testing & Coverage",
+      "keywords": ["test", "testing", "tdd", "test-driven", "coverage", "unit test", "integration test"],
+      "requiredSkills": ["test-driven-development"],
+      "optionalSkills": ["current-test-coverage"],
+      "excludedSkills": [],
+      "description": "Test-driven development, test-first authoring, and coverage assessment."
+    },
+    {
+      "id": "benchmarking-and-perf",
+      "name": "Performance Benchmarking",
+      "keywords": ["benchmark", "benchmarking", "performance", "perf", "timing", "throughput"],
+      "requiredSkills": ["perf-benchmark"],
+      "optionalSkills": ["performance-research"],
+      "excludedSkills": [],
+      "description": "BenchmarkDotNet design, benchmarking strategy, and performance testing."
+    },
+    {
+      "id": "performance-assessment",
+      "name": "Performance Assessment",
+      "keywords": ["performance-assess", "performance issue", "bottleneck", "optimize", "slow", "latency"],
+      "requiredSkills": ["performance-research"],
+      "optionalSkills": ["perf-benchmark"],
+      "excludedSkills": [],
+      "description": "Research-only performance analysis, bottleneck identification, and remediation reporting."
+    },
+    {
+      "id": "security-assessment",
+      "name": "Security Assessment",
+      "keywords": ["security", "vulnerability", "exploit", "threat", "compliance", "secure"],
+      "requiredSkills": ["security-research"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Research-only security analysis, vulnerability identification, and remediation reporting."
+    },
+    {
+      "id": "bug-and-defect",
+      "name": "Debugging & Defect Resolution",
+      "keywords": ["debug", "debugging", "bug", "defect", "error", "issue", "reproduce", "fix bug", "exception", "stack trace", "root cause", "regression"],
+      "requiredSkills": ["task-execution"],
+      "optionalSkills": ["task-research", "critical-thinking"],
+      "excludedSkills": ["writing-plans"],
+      "description": "Bug reproduction, root cause analysis, and defect remediation through targeted execution."
+    },
+    {
+      "id": "refactoring",
+      "name": "Refactoring & Modernization",
+      "keywords": ["refactor", "refactoring", "modernize", "modernization", "upgrade", "migrate", "nullable"],
+      "requiredSkills": ["dotnet-refactor"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": ".NET code modernization, nullable adoption, obsolete API cleanup, and behavior-preserving improvements."
+    },
+    {
+      "id": "resilience-and-patterns",
+      "name": "Resilience & Patterns",
+      "keywords": ["resilience", "resilient", "retry", "circuit-breaker", "polly", "fallback", "timeout"],
+      "requiredSkills": ["dotnet-resilience"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Distributed system resilience, pattern composition, and failure-mode validation."
+    },
+    {
+      "id": "data-access",
+      "name": "Data Access & Repositories",
+      "keywords": ["data-access", "repository", "syrx", "sql", "database", "query", "command"],
+      "requiredSkills": ["syrx-data-access"],
+      "optionalSkills": ["syrx-validation", "sql-server-standards"],
+      "excludedSkills": [],
+      "description": "Syrx-based repository implementation, SQL parameterization, and data access patterns."
+    },
+    {
+      "id": "sql-server-orchestration",
+      "name": "SQL Server Orchestration",
+      "keywords": ["sql server", "sqlserver", "t-sql", "dba", "database administration", "query tuning", "backup restore", "always on", "query store", "dbatools"],
+      "requiredSkills": ["orchestrate-sql-server"],
+      "optionalSkills": ["sql-server-standards", "sql-server-diagnostics", "sql-server-query-tuning", "sql-server-security", "sql-server-automation"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for SQL Server work that spans multiple capability areas."
+    },
+    {
+      "id": "sql-server-query-tuning",
+      "name": "SQL Server Query Tuning",
+      "keywords": ["slow query", "execution plan", "query store", "parameter sniffing", "index tuning", "logical reads", "plan regression"],
+      "requiredSkills": ["sql-server-query-tuning"],
+      "optionalSkills": ["sql-server-standards", "sql-server-diagnostics"],
+      "excludedSkills": [],
+      "description": "Evidence-first SQL Server query tuning and regression-safe plan improvement."
+    },
+    {
+      "id": "sql-server-diagnostics",
+      "name": "SQL Server Diagnostics",
+      "keywords": ["wait stats", "blocking", "tempdb", "memory pressure", "io latency", "xe", "extended events", "diagnostics"],
+      "requiredSkills": ["sql-server-diagnostics"],
+      "optionalSkills": ["sql-server-query-tuning", "sql-server-automation"],
+      "excludedSkills": [],
+      "description": "SQL Server health triage, bottleneck classification, and evidence-first diagnostic workflows."
+    },
+    {
+      "id": "sql-server-security",
+      "name": "SQL Server Security",
+      "keywords": ["sql security", "tde", "audit", "permission", "linked server", "certificate", "least privilege", "surface area"],
+      "requiredSkills": ["sql-server-security"],
+      "optionalSkills": ["sql-server-standards", "sql-server-automation"],
+      "excludedSkills": [],
+      "description": "SQL Server permission, encryption, auditing, and hardening guidance."
+    },
+    {
+      "id": "sql-server-automation",
+      "name": "SQL Server Automation",
+      "keywords": ["dbatools", "backup", "restore", "migration", "maintenance", "sql agent", "inventory", "automation"],
+      "requiredSkills": ["sql-server-automation"],
+      "optionalSkills": ["sql-server-diagnostics", "sql-server-security"],
+      "excludedSkills": [],
+      "description": "Repeatable SQL Server operational automation, maintenance, migration, and evidence-producing workflows."
+    },
+    {
+      "id": "validation-and-guards",
+      "name": "Validation & Guards",
+      "keywords": ["validate", "validation", "guard", "contract", "constraint", "input validation"],
+      "requiredSkills": ["syrx-validation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Syrx.Validation.Contract guard patterns, deterministic validation, and boundary checks."
+    },
+    {
+      "id": "skill-authoring",
+      "name": "Skill Authoring",
+      "keywords": ["skill", "skill author", "skill create", "skill writing", "reusable skill"],
+      "requiredSkills": ["skills-authoring"],
+      "optionalSkills": ["governance-validate-customization", "skill-review"],
+      "excludedSkills": [],
+      "description": "Skill creation, documentation, discoverability, and cross-project portability."
+    },
+    {
+      "id": "agent-authoring",
+      "name": "Agent Authoring",
+      "keywords": ["agent", "agent author", "agent tailoring", ".agent.md"],
+      "requiredSkills": ["agent-authoring"],
+      "optionalSkills": ["governance-validate-customization", "skill-review"],
+      "excludedSkills": [],
+      "description": "Agent creation, role definition, boundary tightening, and companion-skill alignment."
+    },
+    {
+      "id": "instruction-authoring",
+      "name": "Instruction Authoring",
+      "keywords": ["instruction", "instruction author", ".instructions.md", "policy", "guidance"],
+      "requiredSkills": ["instructions-authoring"],
+      "optionalSkills": ["governance-validate-customization", "skill-review"],
+      "excludedSkills": [],
+      "description": "Instruction file creation, policy-domain scoping, and deterministic rule definition."
+    },
+    {
+      "id": "customization-curation",
+      "name": "Customization Curation",
+      "keywords": ["curate", "curation", "copilot-instructions", "import", "catalog"],
+      "requiredSkills": ["curate-copilot-instructions"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Importing and curating agents, instructions, and skills from catalogs."
+    },
+    {
+      "id": "customization-validation",
+      "name": "Customization Validation",
+      "keywords": ["customization validate", "validate custom", "conflict detection"],
+      "requiredSkills": ["governance-validate-customization"],
+      "optionalSkills": ["skill-review"],
+      "excludedSkills": [],
+      "description": "Validation of agents, instructions, and skills against quality standards."
+    },
+    {
+      "id": "skill-review",
+      "name": "Skill Review",
+      "keywords": ["skill review", "review skill", "skill assessment", "skill evaluation"],
+      "requiredSkills": ["skill-review"],
+      "optionalSkills": ["governance-validate-customization"],
+      "excludedSkills": [],
+      "description": "Skill quality assessment, review history tracking, and remediation recommendations."
+    },
+    {
+      "id": "customization-optimization",
+      "name": "Customization Optimization",
+      "keywords": ["optimize custom", "customization optimize", "concise", "deterministic"],
+      "requiredSkills": ["optimize-customizations"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Agent, instruction, and skill optimization with conciseness and determinism checks."
+    },
+    {
+      "id": "skill-composition",
+      "name": "Skill Composition",
+      "keywords": ["compose", "composition", "orchestration", "orchestrate", "multi-skill", "indirection"],
+      "requiredSkills": ["compose-skills"],
+      "optionalSkills": ["critical-thinking", "route-customization"],
+      "excludedSkills": [],
+      "description": "Multi-skill composition through explicit orchestration contracts."
+    },
+    {
+      "id": "routing-customization",
+      "name": "Routing Customization",
+      "keywords": ["routing", "route", "routing customization", "router"],
+      "requiredSkills": ["route-customization"],
+      "optionalSkills": ["critical-thinking", "compose-skills"],
+      "excludedSkills": [],
+      "description": "Determining whether behavior should be agent, instruction, or skill."
+    },
+    {
+      "id": "critical-analysis",
+      "name": "Critical Analysis",
+      "keywords": ["critical", "criticism", "trade-off", "assumption", "challenge", "pressure-test"],
+      "requiredSkills": ["critical-thinking"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Assumption pressure-testing, requirement clarification, and trade-off evaluation."
+    },
+    {
+      "id": "architecture-design",
+      "name": "Architecture & Design",
+      "keywords": ["architecture", "design", "blueprint", "system design", "system boundary", "adr", "decision record"],
+      "requiredSkills": ["domain-design"],
+      "optionalSkills": ["adr-generator", "critical-thinking"],
+      "excludedSkills": [],
+      "description": "Architectural decisions, DDD guidance, and blueprint synthesis."
+    },
+    {
+      "id": "domain-modeling",
+      "name": "Domain Modeling",
+      "keywords": ["domain", "aggregate", "event", "ddd", "domain-driven", "application service"],
+      "requiredSkills": ["domain-design"],
+      "optionalSkills": ["critical-thinking"],
+      "excludedSkills": [],
+      "description": "Aggregate design, domain events, and anti-corruption layer patterns."
+    },
+    {
+      "id": "api-integration",
+      "name": "API Design & Integration",
+      "keywords": ["api", "integration", "client", "resilience", "dto", "contract"],
+      "requiredSkills": ["api-design"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "External API integration, resilient client patterns, and DTO contracts."
+    },
+    {
+      "id": "governance-audit",
+      "name": "Governance Audit",
+      "keywords": ["audit", "governance audit", "governance assess", "health"],
+      "requiredSkills": ["governance-audit"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Workspace governance assessment, ranked remediation reporting."
+    },
+    {
+      "id": "governance-health",
+      "name": "Governance Health Overview",
+      "keywords": ["governance health", "governance overview", "health overview"],
+      "requiredSkills": ["execute-customization-audit"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Reconciled cross-skill governance health synthesis."
+    },
+    {
+      "id": "governance-summary",
+      "name": "Governance Briefing",
+      "keywords": ["governance brief", "governance summary", "governance brief"],
+      "requiredSkills": ["governance-summarize"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Concise single-page governance briefings from existing artifacts."
+    },
+    {
+      "id": "mobile-development",
+      "name": "Mobile Development (.NET MAUI)",
+      "keywords": ["mobile", "maui", ".net maui", "ios", "android", "app development"],
+      "requiredSkills": ["build-maui-apps"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "MAUI mobile app architecture, navigation, data, security, testing, and release readiness."
+    },
+    {
+      "id": "mobile-ux",
+      "name": "Mobile UX Design",
+      "keywords": ["ux", "user experience", "mobile ux", "flow", "wireframe"],
+      "requiredSkills": ["design-mobile-ux"],
+      "optionalSkills": ["prototype-mobile-ui"],
+      "excludedSkills": [],
+      "description": "Mobile UX definition, flow wireframing, validation, and engineering handoff."
+    },
+    {
+      "id": "ui-prototyping",
+      "name": "UI Prototyping",
+      "keywords": ["prototype", "prototyping", "ui", "high-fidelity", "design handoff"],
+      "requiredSkills": ["prototype-mobile-ui"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Wireframe-to-prototype evolution, annotation, and engineering handoff."
+    },
+    {
+      "id": "usability-testing",
+      "name": "Usability Testing",
+      "keywords": ["usability", "testing script", "ux testing", "user test"],
+      "requiredSkills": ["usability-test-scripts"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Usability test script design, scoring rubrics, and findings templates."
+    },
+    {
+      "id": "docker-containerization",
+      "name": "Docker & Containerization",
+      "keywords": ["docker", "container", "containerization", "dockerfile", "image"],
+      "requiredSkills": ["docker-dotnet"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": ".NET containerization, Dockerfile authoring, image optimization, and container security."
+    },
+    {
+      "id": "documentation",
+      "name": "Technical Documentation",
+      "keywords": ["document", "documentation", "tech-doc", "readme", "guide"],
+      "requiredSkills": ["write-technical-docs"],
+      "optionalSkills": ["index-docs", "librarian", "writing-plans", "prd-generator", "adr-generator"],
+      "excludedSkills": [],
+      "description": "Technical reference documentation with code verification and link integrity."
+    },
+    {
+      "id": "documentation-indexing",
+      "name": "Documentation Indexing",
+      "keywords": ["index", "indexing", "catalog", "toc", "table of contents"],
+      "requiredSkills": ["index-docs"],
+      "optionalSkills": ["librarian", "write-technical-docs"],
+      "excludedSkills": [],
+      "description": "Navigable INDEX.md files for document corpus discovery and navigation."
+    },
+    {
+      "id": "information-architecture",
+      "name": "Information Architecture",
+      "keywords": ["librarian", "organization", "structure", "taxonomy", "hierarchy"],
+      "requiredSkills": ["librarian"],
+      "optionalSkills": ["index-docs", "write-technical-docs"],
+      "excludedSkills": [],
+      "description": "Document corpus organization, naming consistency, and deduplication analysis."
+    },
+    {
+      "id": "naming-conventions",
+      "name": "Naming & Taxonomy",
+      "keywords": ["naming", "convention", "taxonomy", "standard", "consistent", "nomenclature"],
+      "requiredSkills": ["asset-naming-taxonomy"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Consistent naming taxonomy across governance, customizations, documentation, and code."
+    },
+    {
+      "id": "branch-management",
+      "name": "Branch Completion",
+      "keywords": ["branch", "completion", "merge", "pr", "pull request", "release"],
+      "requiredSkills": ["branch-completion"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Development work completion, merge strategy, PR preparation, and cleanup."
+    },
+    {
+      "id": "code-review-request",
+      "name": "Code Review Request",
+      "keywords": ["code review", "review request", "request review"],
+      "requiredSkills": ["request-code-review"],
+      "optionalSkills": ["remediate-review"],
+      "excludedSkills": [],
+      "description": "Implementation completion and structured code review initiation."
+    },
+    {
+      "id": "review-remediation",
+      "name": "Review Remediation",
+      "keywords": ["remediate", "remediation", "address feedback", "review feedback"],
+      "requiredSkills": ["remediate-review"],
+      "optionalSkills": ["request-code-review"],
+      "excludedSkills": [],
+      "description": "Code review feedback evaluation and technical remediation."
+    },
+    {
+      "id": "delivery-tracking",
+      "name": "Delivery Status Tracking",
+      "keywords": ["status", "progress", "delivery", "tracking", "completion", "metric"],
+      "requiredSkills": ["delivery-status-grid"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Delivery status reporting with table-first, X of Y measure format."
+    },
+    {
+      "id": "artifact-pruning",
+      "name": "Artifact Pruning",
+      "keywords": ["prune", "cleanup", "archive", "remove", "deprecate", "stale"],
+      "requiredSkills": ["prune-doc-artifacts"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Stale artifact identification and safe removal/archive recommendations."
+    },
+    {
+      "id": "idea-refinement",
+      "name": "Idea Refinement",
+      "keywords": ["refine", "idea", "brainstorm", "challenge", "validate"],
+      "requiredSkills": ["refine-ideas"],
+      "optionalSkills": ["critical-thinking"],
+      "excludedSkills": [],
+      "description": "Structured idea iteration and validation before commitment."
+    },
+    {
+      "id": "synchronization",
+      "name": "Synchronization & Maintenance",
+      "keywords": ["sync", "synchronize", "update", "maintain", "upgrade", "freshness"],
+      "requiredSkills": ["sync-customizations"],
+      "optionalSkills": ["sync-skills", "sync-editorconfig", "prune-sync-assets"],
+      "excludedSkills": [],
+      "description": "Customization and skill library maintenance, source freshness, and alignment."
+    },
+    {
+      "id": "editorconfig-sync",
+      "name": "EditorConfig Synchronization",
+      "keywords": ["editorconfig", "editor config", "using", "type-file"],
+      "requiredSkills": ["sync-editorconfig"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Workspace .editorconfig creation and C# policy compliance validation."
+    },
+    {
+      "id": "dotnet-scaffolding",
+      "name": ".NET Project Scaffolding",
+      "keywords": ["scaffold", "scaffolding", "new project", "template", "setup", "initialization"],
+      "requiredSkills": ["scaffold-dotnet"],
+      "optionalSkills": ["ci-cd-workflows", "layer-boundaries"],
+      "excludedSkills": [],
+      "description": "Lean .NET project structure, standard folders, and reusable build assets."
+    },
+    {
+      "id": "powershell-automation",
+      "name": "PowerShell Automation",
+      "keywords": ["powershell", "script", "automation", "cmdlet", "module"],
+      "requiredSkills": ["powershell-script-library"],
+      "optionalSkills": ["audit-powershell"],
+      "excludedSkills": [],
+      "description": "Reusable PowerShell script library maintenance and catalog-first reuse."
+    },
+    {
+      "id": "powershell-review",
+      "name": "PowerShell Review",
+      "keywords": ["powershell review", "script review", "ps1 audit"],
+      "requiredSkills": ["audit-powershell"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "PowerShell script safety, reliability, and style auditing with corrections."
+    },
+    {
+      "id": "capacitor-orchestration",
+      "name": "CapacitorJS Orchestration",
+      "keywords": ["capacitor", "capacitorjs", "ionic capacitor", "cap sync", "cap add", "hybrid app"],
+      "requiredSkills": ["orchestrate-capacitor"],
+      "optionalSkills": ["capacitor-setup", "capacitor-web-integration", "capacitor-native-apis", "capacitor-security", "capacitor-testing", "capacitor-release-readiness", "capacitor-ci-integration", "capacitor-auth-session", "capacitor-offline-resilience", "capacitor-observability", "capacitor-performance-quality-gate", "capacitor-migration-upgrades", "capacitor-plugin-authoring", "capacitor-source-curation"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for any CapacitorJS request spanning multiple capability areas."
+    },
+    {
+      "id": "capacitor-setup",
+      "name": "CapacitorJS Project Setup",
+      "keywords": ["capacitor setup", "capacitor init", "capacitor config", "capacitor.config.ts", "cap add ios", "cap add android", "appid", "webdir"],
+      "requiredSkills": ["capacitor-setup"],
+      "optionalSkills": ["capacitor-web-integration", "capacitor-source-curation"],
+      "excludedSkills": [],
+      "description": "CapacitorJS project initialization, capacitor.config.ts authoring, platform registration, and sync workflow governance."
+    },
+    {
+      "id": "capacitor-web-integration",
+      "name": "CapacitorJS Web Framework Integration",
+      "keywords": ["capacitor react", "capacitor vue", "capacitor angular", "capacitor sveltekit", "platform detection", "isnativeplatform", "getplatform", "pwa capacitor", "live reload capacitor"],
+      "requiredSkills": ["capacitor-web-integration"],
+      "optionalSkills": ["capacitor-setup", "capacitor-security"],
+      "excludedSkills": [],
+      "description": "CapacitorJS integration into React, Vue, Angular, and SvelteKit with platform detection, build alignment, and PWA coexistence."
+    },
+    {
+      "id": "capacitor-native-apis",
+      "name": "CapacitorJS Native APIs",
+      "keywords": ["capacitor camera", "capacitor geolocation", "capacitor filesystem", "capacitor preferences", "capacitor push", "capacitor haptics", "capacitor network", "capacitor share", "capacitor clipboard", "native api", "capacitor plugin api"],
+      "requiredSkills": ["capacitor-native-apis"],
+      "optionalSkills": ["capacitor-security", "capacitor-testing"],
+      "excludedSkills": [],
+      "description": "Official and community Capacitor plugin API usage with permission handling, platform branching, and web fallbacks."
+    },
+    {
+      "id": "capacitor-plugin-authoring",
+      "name": "CapacitorJS Custom Plugin Authoring",
+      "keywords": ["custom plugin", "capacitor plugin", "native bridge", "swift plugin", "kotlin plugin", "capplugin", "pluginmethod"],
+      "requiredSkills": ["capacitor-plugin-authoring"],
+      "optionalSkills": ["capacitor-testing", "capacitor-security"],
+      "excludedSkills": [],
+      "description": "Custom CapacitorJS plugin design with TypeScript interface, iOS Swift bridge, Android Kotlin bridge, and bridge-safety rules."
+    },
+    {
+      "id": "capacitor-auth-session",
+      "name": "CapacitorJS Auth and Session",
+      "keywords": ["capacitor auth", "capacitor login", "capacitor oauth", "pkce capacitor", "capacitor token", "capacitor refresh", "capacitor logout", "capacitor session", "capacitor deep link auth"],
+      "requiredSkills": ["capacitor-auth-session"],
+      "optionalSkills": ["capacitor-security", "capacitor-testing"],
+      "excludedSkills": [],
+      "description": "OAuth/PKCE flows, token lifecycle, secure refresh, callback validation, and logout hygiene in CapacitorJS hybrid apps."
+    },
+    {
+      "id": "capacitor-offline-resilience",
+      "name": "CapacitorJS Offline Resilience",
+      "keywords": ["capacitor offline", "capacitor sync", "capacitor retry", "capacitor conflict", "offline first capacitor", "capacitor queue", "capacitor reconnect"],
+      "requiredSkills": ["capacitor-offline-resilience"],
+      "optionalSkills": ["capacitor-native-apis", "capacitor-testing"],
+      "excludedSkills": [],
+      "description": "Offline-first behavior, retry/backoff, sync conflict resolution, and recovery validation for CapacitorJS apps."
+    },
+    {
+      "id": "capacitor-observability",
+      "name": "CapacitorJS Observability",
+      "keywords": ["capacitor telemetry", "capacitor logging", "capacitor crash", "capacitor diagnostics", "capacitor analytics", "capacitor monitoring", "capacitor tracing"],
+      "requiredSkills": ["capacitor-observability"],
+      "optionalSkills": ["capacitor-security", "capacitor-ci-integration"],
+      "excludedSkills": [],
+      "description": "Production telemetry, crash diagnostics, cross-layer error correlation, privacy-safe signals, and alert routing for CapacitorJS apps."
+    },
+    {
+      "id": "capacitor-security",
+      "name": "CapacitorJS Security Hardening",
+      "keywords": ["capacitor csp", "capacitor security", "capacitor secure storage", "capacitor permission", "capacitor deep link", "capacitor https", "capacitor cors", "capacitor hardening"],
+      "requiredSkills": ["capacitor-security"],
+      "optionalSkills": ["capacitor-auth-session", "capacitor-testing"],
+      "excludedSkills": [],
+      "description": "CSP, secure storage, permission governance, deep link validation, and transport hardening for CapacitorJS apps."
+    },
+    {
+      "id": "capacitor-testing",
+      "name": "CapacitorJS Testing",
+      "keywords": ["capacitor test", "capacitor mock", "capacitor unit test", "capacitor e2e", "capacitor vitest", "capacitor jest", "capacitor playwright", "mock plugin"],
+      "requiredSkills": ["capacitor-testing"],
+      "optionalSkills": ["capacitor-ci-integration", "capacitor-source-curation"],
+      "excludedSkills": [],
+      "description": "CapacitorJS test strategy with plugin mocking, unit/E2E coverage, and CI device test automation."
+    },
+    {
+      "id": "capacitor-ci-integration",
+      "name": "CapacitorJS CI/CD Integration",
+      "keywords": ["capacitor ci", "capacitor pipeline", "capacitor build automation", "capacitor github actions", "capacitor signing ci", "capacitor artifact"],
+      "requiredSkills": ["capacitor-ci-integration"],
+      "optionalSkills": ["capacitor-testing", "capacitor-release-readiness"],
+      "excludedSkills": [],
+      "description": "Deterministic CI toolchain pinning, cap sync automation, signing-safe pipelines, and promotion-grade artifact packaging for CapacitorJS."
+    },
+    {
+      "id": "capacitor-performance-quality-gate",
+      "name": "CapacitorJS Performance Quality Gate",
+      "keywords": ["capacitor performance", "capacitor startup", "capacitor latency", "capacitor memory", "capacitor bridge latency", "capacitor frame time", "capacitor perf"],
+      "requiredSkills": ["capacitor-performance-quality-gate"],
+      "optionalSkills": ["capacitor-testing", "capacitor-observability"],
+      "excludedSkills": [],
+      "description": "Evidence-first startup, rendering, memory, and bridge-latency performance gate for CapacitorJS release candidates."
+    },
+    {
+      "id": "capacitor-migration-upgrades",
+      "name": "CapacitorJS Version Migration",
+      "keywords": ["capacitor upgrade", "capacitor migration", "capacitor version", "capacitor breaking change", "capacitor plugin upgrade", "capacitor v5", "capacitor v6", "capacitor v7"],
+      "requiredSkills": ["capacitor-migration-upgrades"],
+      "optionalSkills": ["capacitor-source-curation", "capacitor-testing"],
+      "excludedSkills": [],
+      "description": "Compatibility-checked Capacitor version upgrade sequencing with rollback planning and release-risk controls."
+    },
+    {
+      "id": "capacitor-release-readiness",
+      "name": "CapacitorJS Release Readiness",
+      "keywords": ["capacitor release", "capacitor app store", "capacitor play store", "capacitor signing", "capacitor icons", "capacitor splash", "capacitor version", "capacitor store submission"],
+      "requiredSkills": ["capacitor-release-readiness"],
+      "optionalSkills": ["capacitor-ci-integration", "capacitor-security", "capacitor-testing"],
+      "excludedSkills": [],
+      "description": "App Store and Play Store release gate covering icons, signing, versioning, store metadata, smoke evidence, and go/no-go decision."
+    },
+    {
+      "id": "capacitor-source-curation",
+      "name": "CapacitorJS Source Curation",
+      "keywords": ["capacitor source", "capacitor docs freshness", "capacitor guidance", "capacitor official", "capacitor drift"],
+      "requiredSkills": ["capacitor-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification, freshness checking, and drift detection for CapacitorJS skill and guidance content."
+    },
+    {
+      "id": "capacitor-live-updates",
+      "name": "CapacitorJS Live Updates",
+      "keywords": ["capacitor ota", "capacitor live update", "capacitor updater", "appflow", "capgo", "capacitor bundle", "ota rollback", "staged rollout capacitor"],
+      "requiredSkills": ["capacitor-live-updates"],
+      "optionalSkills": ["capacitor-ci-integration", "capacitor-release-readiness", "capacitor-security"],
+      "excludedSkills": [],
+      "description": "OTA live update channel governance, bundle verification, staged rollout, rollback triggers, and store compliance for CapacitorJS apps."
+    },
+    {
+      "id": "capacitor-accessibility",
+      "name": "CapacitorJS Accessibility",
+      "keywords": ["capacitor accessibility", "capacitor voiceover", "capacitor talkback", "capacitor wcag", "capacitor aria", "capacitor focus", "capacitor screen reader", "capacitor a11y"],
+      "requiredSkills": ["capacitor-accessibility"],
+      "optionalSkills": ["capacitor-testing", "capacitor-release-readiness"],
+      "excludedSkills": [],
+      "description": "VoiceOver/TalkBack hybrid accessibility, focus management across web/native boundary, ARIA, dynamic announcements, touch targets, and WCAG compliance for CapacitorJS apps."
+    },
+    {
+      "id": "capacitor-deep-linking",
+      "name": "CapacitorJS Deep Linking",
+      "keywords": ["capacitor deep link", "capacitor universal link", "capacitor app link", "capacitor url scheme", "appUrlOpen", "apple-app-site-association", "assetlinks", "capacitor link routing"],
+      "requiredSkills": ["capacitor-deep-linking"],
+      "optionalSkills": ["capacitor-security", "capacitor-testing", "capacitor-auth-session"],
+      "excludedSkills": [],
+      "description": "Universal Links (iOS), App Links (Android), custom URL schemes, appUrlOpen handler, AASA and assetlinks.json, fallback pages, and deep-link test strategy for CapacitorJS apps."
+    },
+    {
+      "id": "capacitor-environment-config",
+      "name": "CapacitorJS Environment Config",
+      "keywords": ["capacitor env", "capacitor environment", "capacitor config variants", "capacitor dotenv", "capacitor build config", "capacitor app id per env", "capacitor secrets", "capacitor xcconfig"],
+      "requiredSkills": ["capacitor-environment-config"],
+      "optionalSkills": ["capacitor-ci-integration", "capacitor-security"],
+      "excludedSkills": [],
+      "description": "Per-environment .env strategy, build-time injection, capacitor.config.ts variants, native-layer per-env configuration, secret hygiene, and CI injection patterns for CapacitorJS apps."
+    },
+    {
+      "id": "capacitor-push-notifications",
+      "name": "CapacitorJS Push Notifications",
+      "keywords": ["capacitor push", "capacitor push notifications", "capacitor apns", "capacitor fcm", "capacitor firebase messaging", "capacitor notification channel", "capacitor silent push", "capacitor push token"],
+      "requiredSkills": ["capacitor-push-notifications"],
+      "optionalSkills": ["capacitor-native-apis", "capacitor-deep-linking", "capacitor-testing", "capacitor-ci-integration"],
+      "excludedSkills": [],
+      "description": "APNs key and FCM setup, @capacitor/push-notifications wiring, Android notification channels, iOS soft-ask permission, silent pushes, token rotation, FCM HTTP v1 payload design, and tap-to-route navigation."
+    },
+    {
+      "id": "capacitor-privacy-compliance",
+      "name": "CapacitorJS Privacy Compliance",
+      "keywords": ["capacitor privacy manifest", "capacitor PrivacyInfo", "capacitor ATT", "capacitor app tracking transparency", "capacitor data safety", "capacitor GDPR", "capacitor CCPA", "capacitor privacy", "capacitor required reason api"],
+      "requiredSkills": ["capacitor-privacy-compliance"],
+      "optionalSkills": ["capacitor-release-readiness", "capacitor-observability", "capacitor-security"],
+      "excludedSkills": [],
+      "description": "iOS PrivacyInfo.xcprivacy authoring, required-reason API declarations, SDK manifest gap audit, ATT prompt, Android data safety form, and GDPR/CCPA consent flow patterns for CapacitorJS apps."
+    },
+    {
+      "id": "mcp-orchestration",
+      "name": "MCP Server Orchestration",
+      "keywords": ["mcp", "mcp server", "model context protocol", "mcp tool", "mcp resource", "mcp prompt", "mcp transport"],
+      "requiredSkills": ["orchestrate-mcp-servers"],
+      "optionalSkills": ["write-mcp-servers", "refine-mcp-servers", "mcp-source-curation", "mcp-sdk-selection-csharp-typescript", "mcp-transport-architecture", "mcp-server-quality-gate"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for MCP server requests spanning writing, refining, transport, security, testing, and release."
+    },
+    {
+      "id": "mcp-write",
+      "name": "MCP Server Authoring",
+      "keywords": ["write mcp", "create mcp server", "mcp server implementation", "mcp tools definition", "mcp resources definition", "mcp prompts definition"],
+      "requiredSkills": ["write-mcp-servers"],
+      "optionalSkills": ["mcp-source-curation", "mcp-transport-architecture", "mcp-server-quality-gate"],
+      "excludedSkills": [],
+      "description": "New MCP server implementation with expert-level tool, resource, prompt, transport, and safety contracts."
+    },
+    {
+      "id": "mcp-refine",
+      "name": "MCP Server Refinement",
+      "keywords": ["refine mcp", "improve mcp server", "mcp schema quality", "mcp robustness", "mcp ergonomics"],
+      "requiredSkills": ["refine-mcp-servers"],
+      "optionalSkills": ["mcp-contract-versioning", "mcp-transport-architecture", "mcp-server-quality-gate"],
+      "excludedSkills": [],
+      "description": "Iterative MCP server improvement for schema quality, robustness, transport behavior, and operator ergonomics."
+    },
+    {
+      "id": "mcp-source-curation",
+      "name": "MCP Source Curation",
+      "keywords": ["mcp source", "mcp docs", "mcp official", "mcp freshness", "mcp drift"],
+      "requiredSkills": ["mcp-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification, freshness checking, and drift detection for MCP skill and guidance content."
+    },
+    {
+      "id": "mcp-sdk-selection",
+      "name": "MCP SDK Selection",
+      "keywords": ["mcp sdk", "mcp csharp sdk", "mcp typescript sdk", "mcp dotnet", "mcp sdk choice"],
+      "requiredSkills": ["mcp-sdk-selection-csharp-typescript"],
+      "optionalSkills": ["mcp-source-curation"],
+      "excludedSkills": [],
+      "description": "Deterministic C# versus TypeScript SDK selection for MCP implementations."
+    },
+    {
+      "id": "mcp-transport",
+      "name": "MCP Transport Architecture",
+      "keywords": ["mcp stdio", "mcp sse", "mcp streamable-http", "mcp session", "mcp transport", "mcp connection"],
+      "requiredSkills": ["mcp-transport-architecture"],
+      "optionalSkills": ["mcp-authn-authz-hardening"],
+      "excludedSkills": [],
+      "description": "MCP transport and session architecture decisions across stdio, SSE, and streamable-http."
+    },
+    {
+      "id": "mcp-authn-authz",
+      "name": "MCP Auth Hardening",
+      "keywords": ["mcp auth", "mcp authentication", "mcp authorization", "mcp security", "mcp protected tool"],
+      "requiredSkills": ["mcp-authn-authz-hardening"],
+      "optionalSkills": ["mcp-transport-architecture", "mcp-server-quality-gate"],
+      "excludedSkills": [],
+      "description": "MCP server authentication and authorization hardening for protected tools, resources, and transport boundaries."
+    },
+    {
+      "id": "mcp-contract-versioning",
+      "name": "MCP Contract Versioning",
+      "keywords": ["mcp version", "mcp contract", "mcp breaking change", "mcp deprecation", "mcp backward compatibility"],
+      "requiredSkills": ["mcp-contract-versioning"],
+      "optionalSkills": ["mcp-server-quality-gate"],
+      "excludedSkills": [],
+      "description": "MCP tool, resource, and prompt contract evolution with backward-compatibility, deprecation, and promotion rules."
+    },
+    {
+      "id": "mcp-inspector-ci",
+      "name": "MCP Inspector and CI Observability",
+      "keywords": ["mcp inspector", "mcp ci", "mcp validation", "mcp test evidence", "mcp pipeline"],
+      "requiredSkills": ["mcp-inspector-ci-observability"],
+      "optionalSkills": ["mcp-regression-test-design", "mcp-server-quality-gate"],
+      "excludedSkills": [],
+      "description": "MCP server validation evidence via Inspector UI/CLI workflows and CI-ready artifacts."
+    },
+    {
+      "id": "mcp-regression-tests",
+      "name": "MCP Regression Test Design",
+      "keywords": ["mcp regression", "mcp test", "mcp non-regression", "mcp test scenarios"],
+      "requiredSkills": ["mcp-regression-test-design"],
+      "optionalSkills": ["mcp-inspector-ci-observability", "mcp-server-quality-gate"],
+      "excludedSkills": [],
+      "description": "Deterministic non-regression test scenarios across MCP tool, resource, prompt, and transport behavior."
+    },
+    {
+      "id": "mcp-quality-gate",
+      "name": "MCP Server Quality Gate",
+      "keywords": ["mcp quality gate", "mcp review", "mcp quality decision", "mcp merge", "mcp promotion"],
+      "requiredSkills": ["mcp-server-quality-gate"],
+      "optionalSkills": ["mcp-regression-test-design", "mcp-inspector-ci-observability"],
+      "excludedSkills": [],
+      "description": "Expert, evidence-first quality decision for MCP server candidates before merge or promotion."
+    },
+    {
+      "id": "mcp-release-readiness",
+      "name": "MCP Release Readiness",
+      "keywords": ["mcp release", "mcp go no-go", "mcp rollback", "mcp release notes", "mcp promotion"],
+      "requiredSkills": ["mcp-release-readiness-gate"],
+      "optionalSkills": ["mcp-server-quality-gate", "mcp-inspector-ci-observability"],
+      "excludedSkills": [],
+      "description": "Evidence-backed go/no-go decisioning with rollback, approvals, and release-note completeness for MCP server promotions."
+    },
+    {
+      "id": "benchmark-orchestration",
+      "name": "BenchmarkDotNet Orchestration",
+      "keywords": ["benchmark orchestrate", "benchmarkdotnet orchestrate", "benchmark request"],
+      "requiredSkills": ["orchestrate-benchmark"],
+      "optionalSkills": ["benchmark-source-curation", "perf-benchmark", "benchmark-quality-gate", "benchmark-statistical-analysis", "benchmark-ci-integration"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for BenchmarkDotNet requests spanning multiple capability areas."
+    },
+    {
+      "id": "benchmark-source-curation",
+      "name": "BenchmarkDotNet Source Curation",
+      "keywords": ["benchmarkdotnet source", "benchmark guidance", "benchmark docs freshness", "benchmark official"],
+      "requiredSkills": ["benchmark-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification and agent-usable guidance curation for BenchmarkDotNet."
+    },
+    {
+      "id": "benchmark-statistical-analysis",
+      "name": "Benchmark Statistical Analysis",
+      "keywords": ["benchmark statistics", "benchmark distribution", "effect size", "benchmark outlier", "benchmark confidence", "benchmark error bound"],
+      "requiredSkills": ["benchmark-statistical-analysis"],
+      "optionalSkills": ["benchmark-quality-gate"],
+      "excludedSkills": [],
+      "description": "BenchmarkDotNet result interpretation beyond raw means — distributions, effect size, outliers, and confidence adequacy."
+    },
+    {
+      "id": "benchmark-ci-integration",
+      "name": "Benchmark CI Integration",
+      "keywords": ["benchmark ci", "benchmark regression gate", "benchmarkdotnet pipeline", "benchmark pr gate", "benchmark artifact"],
+      "requiredSkills": ["benchmark-ci-integration"],
+      "optionalSkills": ["benchmark-baseline-management", "benchmark-quality-gate"],
+      "excludedSkills": [],
+      "description": "BenchmarkDotNet results gating PRs, tracking regressions across commits, and storing durable CI artifacts."
+    },
+    {
+      "id": "benchmark-profiler-integration",
+      "name": "Benchmark Profiler Integration",
+      "keywords": ["benchmarkdotnet diagnoser", "hardware counters", "etw benchmark", "perf events benchmark", "profiler benchmark", "diagnoser"],
+      "requiredSkills": ["benchmark-profiler-integration"],
+      "optionalSkills": ["benchmark-statistical-analysis"],
+      "excludedSkills": [],
+      "description": "BenchmarkDotNet diagnosers beyond MemoryDiagnoser — hardware counters, ETW/perf_events, profiler correlation, diagnoser co-existence."
+    },
+    {
+      "id": "benchmark-baseline-management",
+      "name": "Benchmark Baseline Management",
+      "keywords": ["benchmark baseline", "benchmark lock", "benchmark compare", "longitudinal performance", "benchmark regression baseline"],
+      "requiredSkills": ["benchmark-baseline-management"],
+      "optionalSkills": ["benchmark-ci-integration", "benchmark-quality-gate"],
+      "excludedSkills": [],
+      "description": "BenchmarkDotNet baseline tracking, locking, comparison, and governance across commits, branches, and releases."
+    },
+    {
+      "id": "benchmark-quality-gate",
+      "name": "Benchmark Quality Gate",
+      "keywords": ["benchmark quality gate", "benchmark go no-go", "benchmark review", "benchmark promotion decision"],
+      "requiredSkills": ["benchmark-quality-gate"],
+      "optionalSkills": ["benchmark-statistical-analysis", "benchmark-baseline-management"],
+      "excludedSkills": [],
+      "description": "Expert, evidence-first quality decision for BenchmarkDotNet suites and benchmark-driven performance changes."
+    },
+    {
+      "id": "xunit-orchestration",
+      "name": "xUnit Orchestration",
+      "keywords": ["xunit orchestrate", "xunit request", "xunit test suite", "unit testing orchestrate"],
+      "requiredSkills": ["orchestrate-xunit"],
+      "optionalSkills": ["xunit-test-design", "xunit-source-curation", "xunit-quality-gate", "xunit-ci-observability"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for xUnit requests spanning multiple capability areas."
+    },
+    {
+      "id": "xunit-source-curation",
+      "name": "xUnit Source Curation",
+      "keywords": ["xunit source", "xunit docs", "xunit guidance", "xunit freshness"],
+      "requiredSkills": ["xunit-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification and agent-usable guidance curation for xUnit."
+    },
+    {
+      "id": "xunit-test-design",
+      "name": "xUnit Test Design",
+      "keywords": ["xunit fact", "xunit theory", "xunit test design", "xunit assertion", "xunit boundary coverage"],
+      "requiredSkills": ["xunit-test-design"],
+      "optionalSkills": ["xunit-fixture-lifecycle", "xunit-moq-collaboration"],
+      "excludedSkills": [],
+      "description": "Expert-level xUnit test design with deterministic Fact/Theory selection, data strategy, assertion quality, and boundary coverage."
+    },
+    {
+      "id": "xunit-fixture-lifecycle",
+      "name": "xUnit Fixture Lifecycle",
+      "keywords": ["xunit fixture", "xunit shared context", "xunit class fixture", "xunit collection fixture", "xunit parallelization"],
+      "requiredSkills": ["xunit-fixture-lifecycle"],
+      "optionalSkills": ["xunit-test-design"],
+      "excludedSkills": [],
+      "description": "xUnit fixture scope, shared context, lifecycle cleanup, and parallelization boundary design."
+    },
+    {
+      "id": "xunit-async-testing",
+      "name": "xUnit Async Testing",
+      "keywords": ["xunit async", "xunit async test", "xunit cancellation", "xunit concurrency test", "xunit task"],
+      "requiredSkills": ["xunit-async-testing"],
+      "optionalSkills": ["xunit-test-design"],
+      "excludedSkills": [],
+      "description": "xUnit tests for asynchronous behavior, cancellation, exception flow, and concurrency outcomes."
+    },
+    {
+      "id": "xunit-moq-collaboration",
+      "name": "xUnit Moq Collaboration",
+      "keywords": ["xunit moq", "moq mock", "xunit test double", "moq verify", "moq setup", "xunit interaction"],
+      "requiredSkills": ["xunit-moq-collaboration"],
+      "optionalSkills": ["xunit-test-design"],
+      "excludedSkills": [],
+      "description": "Expert-level Moq usage boundaries, interaction verification strategy, and collaboration-focused test doubles for xUnit."
+    },
+    {
+      "id": "xunit-quality-gate",
+      "name": "xUnit Quality Gate",
+      "keywords": ["xunit quality gate", "xunit review", "xunit quality decision", "xunit merge", "xunit pass fail"],
+      "requiredSkills": ["xunit-quality-gate"],
+      "optionalSkills": ["xunit-ci-observability"],
+      "excludedSkills": [],
+      "description": "Expert, evidence-first quality decision for xUnit assets with deterministic findings and pass-or-fail recommendation."
+    },
+    {
+      "id": "xunit-runner-platforms",
+      "name": "xUnit Runner Platforms",
+      "keywords": ["xunit runner", "xunit adapter", "xunit cli", "xunit vs test", "dotnet test xunit"],
+      "requiredSkills": ["xunit-runner-platforms"],
+      "optionalSkills": ["xunit-ci-observability"],
+      "excludedSkills": [],
+      "description": "xUnit execution standardization across local and CI environments with deterministic runner selection and result contracts."
+    },
+    {
+      "id": "xunit-ci-observability",
+      "name": "xUnit CI Observability",
+      "keywords": ["xunit ci", "xunit pipeline", "xunit flaky", "xunit evidence", "xunit failure triage", "xunit gate"],
+      "requiredSkills": ["xunit-ci-observability"],
+      "optionalSkills": ["xunit-runner-platforms", "xunit-quality-gate"],
+      "excludedSkills": [],
+      "description": "xUnit pipeline evidence capture, flaky-test classification, failure triage ownership, and gate-ready reporting."
+    },
+    {
+      "id": "xunit-theory-data-stability",
+      "name": "xUnit Theory Data Stability",
+      "keywords": ["xunit theory data", "inlinedata", "memberdata", "classdata", "xunit deterministic data", "xunit theory stable"],
+      "requiredSkills": ["xunit-theory-data-stability"],
+      "optionalSkills": ["xunit-test-design"],
+      "excludedSkills": [],
+      "description": "xUnit Theory data determinism, reproducibility, and stability across IDE, local CLI, and CI execution contexts."
+    },
+    {
+      "id": "xunit-v2-v3-migration",
+      "name": "xUnit v2 to v3 Migration",
+      "keywords": ["xunit v3", "xunit upgrade", "xunit migration", "xunit v2 v3", "xunit breaking change"],
+      "requiredSkills": ["xunit-v2-v3-migration"],
+      "optionalSkills": ["xunit-source-curation", "xunit-quality-gate"],
+      "excludedSkills": [],
+      "description": "Compatibility-checked xUnit v2 to v3 upgrade sequencing with risk-controlled rollout decisions."
+    },
+    {
+      "id": "xunit-traits-and-selection",
+      "name": "xUnit Traits and Selection",
+      "keywords": ["xunit trait", "xunit category", "xunit filter", "xunit selective execution", "xunit test slice"],
+      "requiredSkills": ["xunit-traits-and-selection"],
+      "optionalSkills": ["xunit-ci-observability", "xunit-runner-platforms"],
+      "excludedSkills": [],
+      "description": "xUnit trait taxonomy, selective execution strategy, and release-scope test slicing across local and CI runs."
+    },
+    {
+      "id": "sveltekit-orchestration",
+      "name": "SvelteKit Orchestration",
+      "keywords": ["sveltekit orchestrate", "sveltekit request", "svelte app"],
+      "requiredSkills": ["orchestrate-sveltekit"],
+      "optionalSkills": ["sveltekit-routing", "sveltekit-load", "sveltekit-auth", "sveltekit-testing", "sveltekit-hooks"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for SvelteKit requests spanning multiple capability domains."
+    },
+    {
+      "id": "sveltekit-routing",
+      "name": "SvelteKit Routing",
+      "keywords": ["sveltekit route", "sveltekit pages", "sveltekit layout", "+page.svelte", "+layout.svelte", "sveltekit navigation"],
+      "requiredSkills": ["sveltekit-routing"],
+      "optionalSkills": ["sveltekit-advanced-routing"],
+      "excludedSkills": [],
+      "description": "SvelteKit file-system routing including pages, layouts, navigation, and route parameter handling."
+    },
+    {
+      "id": "sveltekit-advanced-routing",
+      "name": "SvelteKit Advanced Routing",
+      "keywords": ["sveltekit route group", "sveltekit optional param", "sveltekit rest param", "sveltekit matcher", "sveltekit layout inheritance"],
+      "requiredSkills": ["sveltekit-advanced-routing"],
+      "optionalSkills": ["sveltekit-routing"],
+      "excludedSkills": [],
+      "description": "SvelteKit advanced routing: route groups, optional/rest parameters, matchers, and layout inheritance control."
+    },
+    {
+      "id": "sveltekit-load",
+      "name": "SvelteKit Load Functions",
+      "keywords": ["sveltekit load", "sveltekit server load", "+page.server.ts", "+layout.server.ts", "sveltekit universal load", "sveltekit streaming", "sveltekit invalidate"],
+      "requiredSkills": ["sveltekit-load"],
+      "optionalSkills": ["sveltekit-hooks", "sveltekit-server-endpoints"],
+      "excludedSkills": [],
+      "description": "SvelteKit server and universal load functions, streaming, data invalidation, and fetch behavior."
+    },
+    {
+      "id": "sveltekit-actions",
+      "name": "SvelteKit Form Actions",
+      "keywords": ["sveltekit action", "sveltekit form action", "use:enhance", "sveltekit mutation", "+page.server action"],
+      "requiredSkills": ["sveltekit-actions"],
+      "optionalSkills": ["sveltekit-load"],
+      "excludedSkills": [],
+      "description": "SvelteKit form actions, progressive enhancement, validation, and server-side mutation patterns."
+    },
+    {
+      "id": "sveltekit-page-options",
+      "name": "SvelteKit Page Options",
+      "keywords": ["sveltekit ssr", "sveltekit csr", "sveltekit prerender", "sveltekit trailingSlash", "sveltekit entries"],
+      "requiredSkills": ["sveltekit-page-options"],
+      "optionalSkills": ["sveltekit-adapters"],
+      "excludedSkills": [],
+      "description": "SvelteKit rendering behavior via ssr, csr, prerender, trailingSlash, and entries page options."
+    },
+    {
+      "id": "sveltekit-hooks",
+      "name": "SvelteKit Hooks",
+      "keywords": ["sveltekit hook", "sveltekit handle", "sveltekit handleError", "sveltekit handleFetch", "sveltekit sequence", "hooks.server.ts"],
+      "requiredSkills": ["sveltekit-hooks"],
+      "optionalSkills": ["sveltekit-auth", "sveltekit-errors"],
+      "excludedSkills": [],
+      "description": "SvelteKit hooks including handle, handleError, handleFetch, sequence, and server versus universal hook files."
+    },
+    {
+      "id": "sveltekit-errors",
+      "name": "SvelteKit Error Handling",
+      "keywords": ["sveltekit error", "+error.svelte", "sveltekit error boundary", "sveltekit expected error", "sveltekit unexpected error"],
+      "requiredSkills": ["sveltekit-errors"],
+      "optionalSkills": ["sveltekit-hooks"],
+      "excludedSkills": [],
+      "description": "SvelteKit error handling including +error.svelte pages, error helper, handleError hook, and error boundaries."
+    },
+    {
+      "id": "sveltekit-server-endpoints",
+      "name": "SvelteKit Server Endpoints",
+      "keywords": ["sveltekit server endpoint", "+server.ts", "sveltekit api route", "sveltekit get post put delete", "sveltekit json response"],
+      "requiredSkills": ["sveltekit-server-endpoints"],
+      "optionalSkills": ["sveltekit-hooks", "sveltekit-auth"],
+      "excludedSkills": [],
+      "description": "SvelteKit +server.ts API endpoints: HTTP verb handlers, JSON responses, streaming, and content negotiation."
+    },
+    {
+      "id": "sveltekit-state-management",
+      "name": "SvelteKit State Management",
+      "keywords": ["sveltekit state", "sveltekit runes", "$app/state", "sveltekit page state", "sveltekit shallow routing"],
+      "requiredSkills": ["sveltekit-state-management"],
+      "optionalSkills": ["sveltekit-routing"],
+      "excludedSkills": [],
+      "description": "SvelteKit reactive state using runes, $app/state, $app/stores, page state typing, and shallow routing."
+    },
+    {
+      "id": "sveltekit-auth",
+      "name": "SvelteKit Auth",
+      "keywords": ["sveltekit auth", "sveltekit session", "sveltekit oauth", "sveltekit jwt", "sveltekit route protection", "sv add auth"],
+      "requiredSkills": ["sveltekit-auth"],
+      "optionalSkills": ["sveltekit-hooks", "sveltekit-server-endpoints"],
+      "excludedSkills": [],
+      "description": "SvelteKit authentication and session management: cookie sessions, OAuth, JWT, route protection, and the sv add auth add-on."
+    },
+    {
+      "id": "sveltekit-environment",
+      "name": "SvelteKit Environment Variables",
+      "keywords": ["sveltekit env", "sveltekit environment", "$env/static/private", "$env/static/public", "$env/dynamic", "sveltekit server only"],
+      "requiredSkills": ["sveltekit-environment"],
+      "optionalSkills": ["sveltekit-hooks"],
+      "excludedSkills": [],
+      "description": "SvelteKit environment variable modules with server-only boundary enforcement and build versus runtime strategy."
+    },
+    {
+      "id": "sveltekit-observability",
+      "name": "SvelteKit Observability",
+      "keywords": ["sveltekit opentelemetry", "sveltekit tracing", "sveltekit instrumentation", "instrumentation.server.ts", "server-timing sveltekit"],
+      "requiredSkills": ["sveltekit-observability"],
+      "optionalSkills": ["sveltekit-hooks"],
+      "excludedSkills": [],
+      "description": "OpenTelemetry tracing, instrumentation, and Server-Timing headers for SvelteKit via instrumentation.server.ts."
+    },
+    {
+      "id": "sveltekit-testing",
+      "name": "SvelteKit Testing",
+      "keywords": ["sveltekit test", "sveltekit vitest", "sveltekit playwright", "sveltekit e2e", "sveltekit unit test", "@sveltejs/kit/testing"],
+      "requiredSkills": ["sveltekit-testing"],
+      "optionalSkills": ["sveltekit-routing", "sveltekit-load"],
+      "excludedSkills": [],
+      "description": "SvelteKit tests: Vitest unit tests for load/actions, Playwright E2E, and @sveltejs/kit/testing adapter."
+    },
+    {
+      "id": "sveltekit-configuration",
+      "name": "SvelteKit Configuration",
+      "keywords": ["svelte.config.js", "sveltekit config", "sveltekit csp", "sveltekit csrf", "sveltekit base path", "sveltekit alias", "sveltekit preload"],
+      "requiredSkills": ["sveltekit-configuration"],
+      "optionalSkills": ["sveltekit-adapters"],
+      "excludedSkills": [],
+      "description": "SvelteKit svelte.config.js: base paths, aliases, CSP, CSRF, preload strategies, version management, and build options."
+    },
+    {
+      "id": "sveltekit-adapters",
+      "name": "SvelteKit Adapters",
+      "keywords": ["sveltekit adapter", "adapter-node", "adapter-static", "adapter-vercel", "adapter-cloudflare", "sveltekit deploy"],
+      "requiredSkills": ["sveltekit-adapters"],
+      "optionalSkills": ["sveltekit-configuration"],
+      "excludedSkills": [],
+      "description": "SvelteKit adapter selection, configuration, and troubleshooting for Node.js, static, Vercel, Cloudflare, and other targets."
+    },
+    {
+      "id": "sveltekit-packaging",
+      "name": "SvelteKit Library Packaging",
+      "keywords": ["svelte package", "@sveltejs/package", "sveltekit library", "$lib export", "package.json exports svelte", "svelte field"],
+      "requiredSkills": ["sveltekit-packaging"],
+      "optionalSkills": ["sveltekit-configuration"],
+      "excludedSkills": [],
+      "description": "SvelteKit/Svelte component library packaging with @sveltejs/package, exports map, TypeScript declarations, and publishing conventions."
+    },
+    {
+      "id": "tailwind-orchestration",
+      "name": "TailwindCSS Orchestration",
+      "keywords": ["tailwind orchestrate", "tailwindcss orchestrate", "tailwind request"],
+      "requiredSkills": ["orchestrate-tailwind"],
+      "optionalSkills": ["tailwind-setup", "tailwind-component-design", "tailwind-quality-gate", "tailwind-source-curation"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for TailwindCSS requests spanning multiple capability areas."
+    },
+    {
+      "id": "tailwind-source-curation",
+      "name": "TailwindCSS Source Curation",
+      "keywords": ["tailwind source", "tailwindcss docs", "tailwind freshness", "tailwind guidance", "tailwind drift"],
+      "requiredSkills": ["tailwind-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification and agent-usable guidance curation for TailwindCSS."
+    },
+    {
+      "id": "tailwind-setup",
+      "name": "TailwindCSS Setup",
+      "keywords": ["tailwind setup", "tailwind install", "tailwind config", "tailwind v4", "tailwind migrate", "tailwind pipeline"],
+      "requiredSkills": ["tailwind-setup"],
+      "optionalSkills": ["tailwind-source-curation"],
+      "excludedSkills": [],
+      "description": "TailwindCSS project setup, v3 to v4 migration, and existing build pipeline auditing."
+    },
+    {
+      "id": "tailwind-component-design",
+      "name": "TailwindCSS Component Design",
+      "keywords": ["tailwind component", "tailwind utility", "tailwind responsive", "tailwind dark mode", "tailwind token", "headless ui tailwind"],
+      "requiredSkills": ["tailwind-component-design"],
+      "optionalSkills": ["tailwind-design-system"],
+      "excludedSkills": [],
+      "description": "TailwindCSS component patterns: utility composition, responsive design, dark mode, design tokens, and Headless UI integration."
+    },
+    {
+      "id": "tailwind-quality-gate",
+      "name": "TailwindCSS Quality Gate",
+      "keywords": ["tailwind quality gate", "tailwind bundle size", "tailwind review", "tailwind merge", "tailwind core web vitals"],
+      "requiredSkills": ["tailwind-quality-gate"],
+      "optionalSkills": ["tailwind-ci-integration"],
+      "excludedSkills": [],
+      "description": "Expert, evidence-first quality decision for TailwindCSS covering bundle size, accessibility, token conformance, and Core Web Vitals."
+    },
+    {
+      "id": "tailwind-ci-integration",
+      "name": "TailwindCSS CI Integration",
+      "keywords": ["tailwind ci", "tailwind bundle gate", "tailwind pipeline", "tailwind class ordering ci", "tailwind pr gate"],
+      "requiredSkills": ["tailwind-ci-integration"],
+      "optionalSkills": ["tailwind-quality-gate"],
+      "excludedSkills": [],
+      "description": "TailwindCSS CI enforcement for bundle size, class ordering, content scanning, and Core Web Vitals thresholds."
+    },
+    {
+      "id": "tailwind-design-system",
+      "name": "TailwindCSS Design System",
+      "keywords": ["tailwind design system", "tailwind monorepo", "tailwind token versioning", "tailwind shared tokens", "tailwind cross-app"],
+      "requiredSkills": ["tailwind-design-system"],
+      "optionalSkills": ["tailwind-component-design", "tailwind-ci-integration"],
+      "excludedSkills": [],
+      "description": "Shared TailwindCSS design token package across applications or a monorepo with token versioning and breaking-change governance."
+    },
+    {
+      "id": "shadcn-orchestration",
+      "name": "shadcn/ui Orchestration",
+      "keywords": ["shadcn orchestrate", "shadcn/ui orchestrate", "shadcn request"],
+      "requiredSkills": ["orchestrate-shadcn"],
+      "optionalSkills": ["shadcn-setup", "shadcn-component-design", "shadcn-theming", "shadcn-forms", "shadcn-quality-gate", "shadcn-source-curation"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for shadcn/ui requests spanning multiple capability areas."
+    },
+    {
+      "id": "shadcn-source-curation",
+      "name": "shadcn/ui Source Curation",
+      "keywords": ["shadcn source", "shadcn docs", "shadcn freshness", "shadcn guidance", "shadcn drift"],
+      "requiredSkills": ["shadcn-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification and agent-usable guidance curation for shadcn/ui."
+    },
+    {
+      "id": "shadcn-setup",
+      "name": "shadcn/ui Setup",
+      "keywords": ["shadcn setup", "shadcn install", "shadcn init", "components.json", "shadcn cli", "shadcn path alias"],
+      "requiredSkills": ["shadcn-setup"],
+      "optionalSkills": ["shadcn-source-curation", "shadcn-theming"],
+      "excludedSkills": [],
+      "description": "shadcn/ui CLI initialization, components.json configuration, framework wiring, path alias setup, and dependency alignment."
+    },
+    {
+      "id": "shadcn-theming",
+      "name": "shadcn/ui Theming",
+      "keywords": ["shadcn theme", "shadcn css variables", "shadcn dark mode", "shadcn brand", "shadcn token", "shadcn multi-theme"],
+      "requiredSkills": ["shadcn-theming"],
+      "optionalSkills": ["shadcn-design-system"],
+      "excludedSkills": [],
+      "description": "shadcn/ui CSS variable system: color token design, dark mode strategy, brand palette mapping, and multi-theme support."
+    },
+    {
+      "id": "shadcn-component-design",
+      "name": "shadcn/ui Component Design",
+      "keywords": ["shadcn component", "shadcn cva", "shadcn radix", "shadcn variant", "shadcn compound component", "shadcn custom component"],
+      "requiredSkills": ["shadcn-component-design"],
+      "optionalSkills": ["shadcn-accessibility", "shadcn-theming"],
+      "excludedSkills": [],
+      "description": "shadcn/ui component design with CVA variant patterns, Radix primitive wiring, and compound component authoring."
+    },
+    {
+      "id": "shadcn-forms",
+      "name": "shadcn/ui Forms",
+      "keywords": ["shadcn form", "react-hook-form shadcn", "zod shadcn", "shadcn FormField", "shadcn validation", "shadcn multi-step form"],
+      "requiredSkills": ["shadcn-forms"],
+      "optionalSkills": ["shadcn-component-design", "shadcn-accessibility"],
+      "excludedSkills": [],
+      "description": "shadcn/ui forms with react-hook-form, zod schemas, FormField composition, validation UX, and server action wiring."
+    },
+    {
+      "id": "shadcn-data-display",
+      "name": "shadcn/ui Data Display",
+      "keywords": ["shadcn datatable", "tanstack table shadcn", "shadcn chart", "shadcn recharts", "shadcn command", "shadcn combobox", "shadcn pagination"],
+      "requiredSkills": ["shadcn-data-display"],
+      "optionalSkills": ["shadcn-component-design"],
+      "excludedSkills": [],
+      "description": "shadcn/ui data surfaces: TanStack Table DataTable, Charts (Recharts), Command palette, Combobox, and complex list/grid compositions."
+    },
+    {
+      "id": "shadcn-testing",
+      "name": "shadcn/ui Testing",
+      "keywords": ["shadcn test", "shadcn radix portal", "shadcn dialog test", "shadcn keyboard test", "shadcn storybook"],
+      "requiredSkills": ["shadcn-testing"],
+      "optionalSkills": ["shadcn-component-design", "shadcn-accessibility"],
+      "excludedSkills": [],
+      "description": "Tests for shadcn/ui components: Radix portal handling, keyboard interaction, async assertions, and Storybook story contracts."
+    },
+    {
+      "id": "shadcn-accessibility",
+      "name": "shadcn/ui Accessibility",
+      "keywords": ["shadcn accessibility", "shadcn aria", "shadcn wcag", "shadcn keyboard nav", "shadcn focus", "shadcn screen reader", "shadcn a11y"],
+      "requiredSkills": ["shadcn-accessibility"],
+      "optionalSkills": ["shadcn-testing", "shadcn-component-design"],
+      "excludedSkills": [],
+      "description": "Accessible shadcn/ui: per-component Radix ARIA contracts, WCAG 2.2, keyboard interaction, focus management, and screen reader patterns."
+    },
+    {
+      "id": "shadcn-migration",
+      "name": "shadcn/ui Migration",
+      "keywords": ["shadcn migration", "mui to shadcn", "chakra to shadcn", "mantine to shadcn", "ant design to shadcn", "component library migration shadcn"],
+      "requiredSkills": ["shadcn-migration"],
+      "optionalSkills": ["shadcn-setup", "shadcn-theming"],
+      "excludedSkills": [],
+      "description": "Migration to shadcn/ui from MUI, Chakra UI, Mantine, or Ant Design with equivalence maps and progressive coexistence."
+    },
+    {
+      "id": "shadcn-animation",
+      "name": "shadcn/ui Animation",
+      "keywords": ["shadcn animation", "shadcn framer motion", "shadcn tailwindcss-animate", "shadcn exit animation", "shadcn reduced motion", "shadcn animate presence"],
+      "requiredSkills": ["shadcn-animation"],
+      "optionalSkills": ["shadcn-component-design", "shadcn-accessibility"],
+      "excludedSkills": [],
+      "description": "shadcn/ui animations: Framer Motion + Radix integration, tailwindcss-animate keyframes, AnimatePresence, and prefers-reduced-motion compliance."
+    },
+    {
+      "id": "shadcn-registry",
+      "name": "shadcn/ui Component Registry",
+      "keywords": ["shadcn registry", "shadcn custom registry", "registry.json", "shadcn cli resolution", "shadcn component distribution"],
+      "requiredSkills": ["shadcn-registry"],
+      "optionalSkills": ["shadcn-design-system"],
+      "excludedSkills": [],
+      "description": "Custom shadcn/ui component registry: registry.json schema, item types, CLI resolution, hosting, and cross-project distribution."
+    },
+    {
+      "id": "shadcn-ci-integration",
+      "name": "shadcn/ui CI Integration",
+      "keywords": ["shadcn ci", "shadcn pipeline", "shadcn token drift", "shadcn bundle ci", "shadcn registry ci"],
+      "requiredSkills": ["shadcn-ci-integration"],
+      "optionalSkills": ["shadcn-quality-gate"],
+      "excludedSkills": [],
+      "description": "shadcn/ui CI enforcement for component freshness, import correctness, bundle impact, token conformance, and registry drift."
+    },
+    {
+      "id": "shadcn-design-system",
+      "name": "shadcn/ui Design System",
+      "keywords": ["shadcn design system", "shadcn monorepo", "shadcn shared library", "shadcn token versioning", "shadcn cross-app"],
+      "requiredSkills": ["shadcn-design-system"],
+      "optionalSkills": ["shadcn-registry", "shadcn-theming", "shadcn-ci-integration"],
+      "excludedSkills": [],
+      "description": "Shared shadcn/ui component library across applications or a monorepo with package architecture, token versioning, and governance."
+    },
+    {
+      "id": "shadcn-quality-gate",
+      "name": "shadcn/ui Quality Gate",
+      "keywords": ["shadcn quality gate", "shadcn review", "shadcn merge", "shadcn promotion", "shadcn go no-go"],
+      "requiredSkills": ["shadcn-quality-gate"],
+      "optionalSkills": ["shadcn-testing", "shadcn-accessibility", "shadcn-ci-integration"],
+      "excludedSkills": [],
+      "description": "Expert, evidence-first quality decision for shadcn/ui: accessibility, token conformance, bundle health, form integrity, and Radix primitive integrity."
+    },
+    {
+      "id": "kendo-orchestration",
+      "name": "Kendo UI Orchestration",
+      "keywords": ["kendo orchestrate", "kendo ui orchestrate", "kendo request", "telerik kendo"],
+      "requiredSkills": ["orchestrate-kendo"],
+      "optionalSkills": ["kendo-ui-core", "kendo-ui-data-binding", "kendo-ui-quality-gate", "kendo-ui-source-curation"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for Kendo UI requests spanning multiple capability areas."
+    },
+    {
+      "id": "kendo-source-curation",
+      "name": "Kendo UI Source Curation",
+      "keywords": ["kendo source", "kendo docs", "kendo freshness", "kendo guidance", "telerik kendo drift"],
+      "requiredSkills": ["kendo-ui-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification and agent-usable guidance curation for Kendo UI."
+    },
+    {
+      "id": "kendo-core",
+      "name": "Kendo UI Core Components",
+      "keywords": ["kendo grid", "kendo chart", "kendo scheduler", "kendo treeview", "kendo editor", "kendo widget", "kendo initialize"],
+      "requiredSkills": ["kendo-ui-core"],
+      "optionalSkills": ["kendo-ui-data-binding", "kendo-ui-theming"],
+      "excludedSkills": [],
+      "description": "Kendo UI component initialization, configuration, and lifecycle for Grid, Chart, Scheduler, TreeView, and Editor."
+    },
+    {
+      "id": "kendo-data-binding",
+      "name": "Kendo UI Data Binding",
+      "keywords": ["kendo datasource", "kendo mvvm", "kendo remote transport", "kendo paging", "kendo filter", "kendo sort", "kendo group"],
+      "requiredSkills": ["kendo-ui-data-binding"],
+      "optionalSkills": ["kendo-ui-core"],
+      "excludedSkills": [],
+      "description": "Kendo UI DataSource, MVVM ViewModel, remote transport, paging, filtering, sorting, grouping, and real-time data binding."
+    },
+    {
+      "id": "kendo-theming",
+      "name": "Kendo UI Theming",
+      "keywords": ["kendo theme", "kendo sass", "kendo themebuilder", "kendo css override", "kendo brand", "kendo dark mode"],
+      "requiredSkills": ["kendo-ui-theming"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Kendo UI theme customization via SASS variables, ThemeBuilder, CSS overrides, dark mode, and upgrade-safe governance."
+    },
+    {
+      "id": "kendo-accessibility",
+      "name": "Kendo UI Accessibility",
+      "keywords": ["kendo accessibility", "kendo wcag", "kendo aria", "kendo keyboard", "kendo focus", "kendo screen reader", "kendo a11y"],
+      "requiredSkills": ["kendo-ui-accessibility"],
+      "optionalSkills": ["kendo-ui-testing"],
+      "excludedSkills": [],
+      "description": "Kendo UI accessibility: WCAG 2.1 AA, ARIA roles, keyboard navigation, focus management, and screen reader compatibility."
+    },
+    {
+      "id": "kendo-forms",
+      "name": "Kendo UI Forms",
+      "keywords": ["kendo form", "kendo validator", "kendo model validation", "kendo error message", "kendo multi-step form"],
+      "requiredSkills": ["kendo-ui-forms"],
+      "optionalSkills": ["kendo-ui-accessibility"],
+      "excludedSkills": [],
+      "description": "Kendo UI form widgets, Validator, model-driven validation, error messaging, and multi-step form flows."
+    },
+    {
+      "id": "kendo-security",
+      "name": "Kendo UI Security",
+      "keywords": ["kendo xss", "kendo template injection", "kendo csrf", "kendo upload security", "kendo cve", "kendo security"],
+      "requiredSkills": ["kendo-ui-security"],
+      "optionalSkills": ["kendo-ui-testing"],
+      "excludedSkills": [],
+      "description": "Kendo UI security review: XSS in templates, CSRF in DataSource transport, insecure Upload, and known CVEs."
+    },
+    {
+      "id": "kendo-performance",
+      "name": "Kendo UI Performance",
+      "keywords": ["kendo performance", "kendo virtual scroll", "kendo paging strategy", "kendo bundle size", "kendo memory leak", "kendo widget cost"],
+      "requiredSkills": ["kendo-ui-performance"],
+      "optionalSkills": ["kendo-ui-data-binding"],
+      "excludedSkills": [],
+      "description": "Kendo UI performance: Grid virtual scrolling, DataSource paging, widget initialization cost, bundle size, and memory leak prevention."
+    },
+    {
+      "id": "kendo-migration",
+      "name": "Kendo UI Migration",
+      "keywords": ["kendo upgrade", "kendo migration", "kendo jquery to react", "kendo angular migration", "kendo vue migration", "kendo version"],
+      "requiredSkills": ["kendo-ui-migration"],
+      "optionalSkills": ["kendo-ui-source-curation", "kendo-ui-quality-gate"],
+      "excludedSkills": [],
+      "description": "Kendo UI version upgrades and framework variant migration (jQuery to React/Angular/Vue) with deprecation tracking."
+    },
+    {
+      "id": "kendo-testing",
+      "name": "Kendo UI Testing",
+      "keywords": ["kendo test", "kendo mock datasource", "kendo event test", "kendo widget lifecycle test", "kendo integration test"],
+      "requiredSkills": ["kendo-ui-testing"],
+      "optionalSkills": ["kendo-ui-core"],
+      "excludedSkills": [],
+      "description": "Tests for Kendo UI components: mock DataSource, event simulation, widget lifecycle, and integration strategy."
+    },
+    {
+      "id": "kendo-ci-integration",
+      "name": "Kendo UI CI Integration",
+      "keywords": ["kendo ci", "kendo pipeline", "kendo bundle ci", "kendo license validation", "kendo test ci", "kendo theme ci"],
+      "requiredSkills": ["kendo-ui-ci-integration"],
+      "optionalSkills": ["kendo-ui-quality-gate", "kendo-ui-testing"],
+      "excludedSkills": [],
+      "description": "Kendo UI CI enforcement for build quality, test execution, bundle size, theme compilation, security, and license validation."
+    },
+    {
+      "id": "kendo-quality-gate",
+      "name": "Kendo UI Quality Gate",
+      "keywords": ["kendo quality gate", "kendo review", "kendo merge", "kendo go no-go", "kendo promotion"],
+      "requiredSkills": ["kendo-ui-quality-gate"],
+      "optionalSkills": ["kendo-ui-testing", "kendo-ui-accessibility", "kendo-ui-security"],
+      "excludedSkills": [],
+      "description": "Expert, evidence-first quality decision for Kendo UI: correctness, security, accessibility, performance, and migration safety."
+    },
+    {
+      "id": "kendo-grid-advanced",
+      "name": "Kendo UI Grid Advanced",
+      "keywords": ["kendo grid edit", "kendo grid virtual", "kendo grid group", "kendo locked columns", "kendo grid aggregate", "kendo grid scale"],
+      "requiredSkills": ["kendo-ui-grid-advanced"],
+      "optionalSkills": ["kendo-ui-data-binding", "kendo-ui-performance"],
+      "excludedSkills": [],
+      "description": "Kendo UI Grid advanced patterns: editing modes, virtualization, grouping aggregates, locked columns, and behavior at scale."
+    },
+    {
+      "id": "kendo-charts-dataviz",
+      "name": "Kendo UI Charts and Dataviz",
+      "keywords": ["kendo chart", "kendo dataviz", "kendo drill-down", "kendo cross-filter", "kendo large dataset chart"],
+      "requiredSkills": ["kendo-ui-charts-dataviz"],
+      "optionalSkills": ["kendo-ui-data-binding"],
+      "excludedSkills": [],
+      "description": "Kendo UI charts and data visualizations for large datasets, drill-down, and cross-filtering."
+    },
+    {
+      "id": "kendo-export-printing",
+      "name": "Kendo UI Export and Printing",
+      "keywords": ["kendo excel export", "kendo pdf export", "kendo print", "kendo export", "kendo file export"],
+      "requiredSkills": ["kendo-ui-export-printing"],
+      "optionalSkills": ["kendo-ui-security"],
+      "excludedSkills": [],
+      "description": "Kendo UI Excel/PDF export and print workflows with output quality, secure data handling, and reproducible delivery."
+    },
+    {
+      "id": "kendo-localization",
+      "name": "Kendo UI Localization",
+      "keywords": ["kendo localization", "kendo globalization", "kendo culture", "kendo message pack", "kendo rtl", "kendo locale"],
+      "requiredSkills": ["kendo-ui-localization"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Kendo UI localization and globalization: culture-aware formatting, message packs, RTL behavior, and locale regression."
+    },
+    {
+      "id": "kendo-state-persistence",
+      "name": "Kendo UI State Persistence",
+      "keywords": ["kendo state persist", "kendo filter persist", "kendo column layout persist", "kendo session state", "kendo grid state"],
+      "requiredSkills": ["kendo-ui-state-persistence"],
+      "optionalSkills": ["kendo-ui-data-binding"],
+      "excludedSkills": [],
+      "description": "Kendo UI component state persistence and restore across sessions, routes, and devices."
+    },
+    {
+      "id": "kendo-real-time-updates",
+      "name": "Kendo UI Real-Time Updates",
+      "keywords": ["kendo real-time", "kendo signalr", "kendo websocket", "kendo push data", "kendo streaming", "kendo live data"],
+      "requiredSkills": ["kendo-ui-real-time-updates"],
+      "optionalSkills": ["kendo-ui-data-binding"],
+      "excludedSkills": [],
+      "description": "Kendo UI real-time data surfaces via push/streaming while preserving UI consistency and user task continuity."
+    },
+    {
+      "id": "kendo-upload-file-workflows",
+      "name": "Kendo UI Upload File Workflows",
+      "keywords": ["kendo upload", "kendo file manager", "kendo chunked upload", "kendo signed endpoint", "kendo file lifecycle"],
+      "requiredSkills": ["kendo-ui-upload-file-workflows"],
+      "optionalSkills": ["kendo-ui-security"],
+      "excludedSkills": [],
+      "description": "Kendo UI Upload and FileManager: chunking, validation, retry, signed endpoints, and secure end-to-end file lifecycle."
+    },
+    {
+      "id": "kendo-observability",
+      "name": "Kendo UI Observability",
+      "keywords": ["kendo telemetry", "kendo widget error", "kendo latency", "kendo analytics", "kendo usage signal"],
+      "requiredSkills": ["kendo-ui-observability"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Kendo UI telemetry contracts for widget lifecycle failures, interaction latency, usage signals, and diagnosable production behavior."
+    },
+    {
+      "id": "jquery-orchestration",
+      "name": "jQuery Orchestration",
+      "keywords": ["jquery orchestrate", "jquery request"],
+      "requiredSkills": ["orchestrate-jquery"],
+      "optionalSkills": ["jquery-core", "jquery-events", "jquery-ajax", "jquery-quality-gate", "jquery-source-curation"],
+      "excludedSkills": [],
+      "description": "Deterministic intake and phased ownership for jQuery requests spanning multiple capability areas."
+    },
+    {
+      "id": "jquery-source-curation",
+      "name": "jQuery Source Curation",
+      "keywords": ["jquery source", "jquery docs", "jquery freshness", "jquery guidance", "jquery drift"],
+      "requiredSkills": ["jquery-source-curation"],
+      "optionalSkills": [],
+      "excludedSkills": [],
+      "description": "Official-source verification and agent-usable guidance curation for jQuery."
+    },
+    {
+      "id": "jquery-core",
+      "name": "jQuery Core DOM",
+      "keywords": ["jquery selector", "jquery traversal", "jquery dom manipulation", "jquery method chaining", "jquery find"],
+      "requiredSkills": ["jquery-core"],
+      "optionalSkills": ["jquery-performance"],
+      "excludedSkills": [],
+      "description": "jQuery DOM selection, traversal, manipulation, and method chaining with selector performance and modern API usage."
+    },
+    {
+      "id": "jquery-events",
+      "name": "jQuery Events",
+      "keywords": ["jquery event", "jquery on", "jquery off", "jquery delegation", "jquery event namespace", "jquery custom event"],
+      "requiredSkills": ["jquery-events"],
+      "optionalSkills": ["jquery-performance"],
+      "excludedSkills": [],
+      "description": "jQuery event binding, delegation, namespace management, custom events, and event-object handling."
+    },
+    {
+      "id": "jquery-ajax",
+      "name": "jQuery AJAX",
+      "keywords": ["jquery ajax", "jquery deferred", "jquery promise", "jquery get post", "jquery json request"],
+      "requiredSkills": ["jquery-ajax"],
+      "optionalSkills": ["jquery-security"],
+      "excludedSkills": [],
+      "description": "jQuery AJAX requests, Deferred objects, Promise chaining, error handling, and secure request configuration."
+    },
+    {
+      "id": "jquery-plugins",
+      "name": "jQuery Plugins",
+      "keywords": ["jquery plugin", "jquery ui widget", "jquery validation plugin", "jquery community plugin"],
+      "requiredSkills": ["jquery-plugins"],
+      "optionalSkills": ["jquery-security"],
+      "excludedSkills": [],
+      "description": "jQuery plugin authoring, jQuery UI widgets, jQuery Validation, and community plugin safety evaluation."
+    },
+    {
+      "id": "jquery-performance",
+      "name": "jQuery Performance",
+      "keywords": ["jquery performance", "jquery selector efficiency", "jquery dom batch", "jquery memory", "jquery render blocking"],
+      "requiredSkills": ["jquery-performance"],
+      "optionalSkills": ["jquery-core"],
+      "excludedSkills": [],
+      "description": "jQuery performance: selector efficiency, DOM operation batching, event delegation, memory management, and render-blocking reduction."
+    },
+    {
+      "id": "jquery-migration",
+      "name": "jQuery Migration",
+      "keywords": ["jquery migrate", "jquery v3 upgrade", "jquery v1 v2 v3", "jquery migrate plugin", "jquery native replacement"],
+      "requiredSkills": ["jquery-migration"],
+      "optionalSkills": ["jquery-source-curation", "jquery-quality-gate"],
+      "excludedSkills": [],
+      "description": "jQuery v1/v2 to v3 migration using jQuery Migrate plugin, or phased replacement with native browser APIs."
+    },
+    {
+      "id": "jquery-testing",
+      "name": "jQuery Testing",
+      "keywords": ["jquery test", "jquery qunit", "jquery jest", "jquery dom test", "jquery ajax mock", "jquery plugin test"],
+      "requiredSkills": ["jquery-testing"],
+      "optionalSkills": ["jquery-ci-integration"],
+      "excludedSkills": [],
+      "description": "jQuery tests: DOM interaction, event simulation, AJAX mocking, and plugin behavior verification with QUnit or Jest."
+    },
+    {
+      "id": "jquery-security",
+      "name": "jQuery Security",
+      "keywords": ["jquery xss", "jquery html injection", "jquery csrf", "jquery csp", "jquery security review"],
+      "requiredSkills": ["jquery-security"],
+      "optionalSkills": ["jquery-testing"],
+      "excludedSkills": [],
+      "description": "jQuery security: XSS vulnerabilities, unsafe HTML injection, insecure AJAX, CSRF exposure, and CSP compliance."
+    },
+    {
+      "id": "jquery-ci-integration",
+      "name": "jQuery CI Integration",
+      "keywords": ["jquery ci", "jquery pipeline", "jquery bundle ci", "jquery deprecation ci", "jquery security ci"],
+      "requiredSkills": ["jquery-ci-integration"],
+      "optionalSkills": ["jquery-quality-gate"],
+      "excludedSkills": [],
+      "description": "jQuery CI enforcement for build, test, deprecation, security, and bundle workflows."
+    },
+    {
+      "id": "jquery-quality-gate",
+      "name": "jQuery Quality Gate",
+      "keywords": ["jquery quality gate", "jquery review", "jquery merge", "jquery go no-go", "jquery promotion"],
+      "requiredSkills": ["jquery-quality-gate"],
+      "optionalSkills": ["jquery-testing", "jquery-security", "jquery-performance"],
+      "excludedSkills": [],
+      "description": "Expert, evidence-first quality decision for jQuery: correctness, security, performance, migration safety, and test coverage."
+    }
+  ]
+}
+

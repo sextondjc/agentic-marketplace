@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0",
+  "id": "plugin-authoring-lifecycle",
+  "name": "plugin-authoring-lifecycle",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "description": "End-to-end authoring and publishing workflows for agent plugins.",
+  "capabilities": [
+    "End-to-end authoring and publishing workflows for agent plugins."
+  ],
+  "dependencies": [
+    "core-intake-governance",
+    "governance-review-audit"
+  ],
+  "assets": {
+    "agents": [
+      "workspace-scaffolder.agent.md"
+    ],
+    "instructions": [
+      "governance-naming-conventions.instructions.md",
+      "secure-coding.instructions.md",
+      "request-economy.instructions.md"
+    ],
+    "prompts": [
+      "workspace-scaffolder.prompt.md"
+    ],
+    "skills": [
+      "agent-plugin-setup",
+      "agent-plugin-design",
+      "agent-plugin-implementation-markdown",
+      "agent-plugin-implementation-extension",
+      "agent-plugin-tools-integration",
+      "agent-plugin-security-hardening",
+      "agent-plugin-publishing",
+      "agent-authoring",
+      "instructions-authoring",
+      "skills-authoring",
+      "route-customization",
+      "agent-plugin-integrity"
+    ]
+  }
+}

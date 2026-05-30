@@ -1,0 +1,17 @@
+{
+  "RootPath": "C:\\Projects\\agentic",
+  "SimilarityThreshold": 0.82,
+  "MinimumSharedTokens": 6,
+  "MaxAllowedDuplicatePairs": 8,
+  "AssetCounts": {
+    "Agents": 18,
+    "Instructions": 21,
+    "Prompts": 21,
+    "Skills": 268,
+    "Total": 328
+  },
+  "DuplicatePairCount": 0,
+  "DuplicatePairThresholdBreached": false,
+  "TypePairCounts": {},
+  "OverlapPairs": []
+}

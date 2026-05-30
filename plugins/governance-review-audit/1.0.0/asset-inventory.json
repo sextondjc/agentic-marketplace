@@ -1,0 +1,428 @@
+{
+  "pluginId": "PLG-03",
+  "pluginName": "governance-review-audit",
+  "pluginVersion": "1.0.0",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "4c189423ec4b90dc762207a9e7e4e963be04098932f7e0caca6d07d4c89ab646",
+      "purpose": "Plugin manifest metadata and dependency declarations."
+    },
+    {
+      "path": "skills/governance-health-overview/references/.artifacts/governance-audit-types-customizations.md",
+      "sha256": "e001a9f1f5e9ca52d80c6cfb9de2639dcf2d334a855e26004f39b3b87f4b857d",
+      "purpose": "Supporting artifact for skill 'governance-health-overview'."
+    },
+    {
+      "path": "skills/governance-health-overview/SKILL.md",
+      "sha256": "0c455e2623b00021b37a3d7fe7add6600e5cfe38712370fb31f8639845c262e1",
+      "purpose": "Synthesizes governance health into unified status view."
+    },
+    {
+      "path": "skills/governance-audit/references/planning-execution-review-governance.md",
+      "sha256": "86feb64a786f9c77eea3a332bd9f9253bf7d50369c3b80387fea0954e94575db",
+      "purpose": "Supporting artifact for skill 'governance-audit'."
+    },
+    {
+      "path": "skills/governance-audit/references/governance-audit-checklist.md",
+      "sha256": "f1d53ca1d867527a503f1fc967fd76e556fc3d00fac62c52a02bda5528dd168d",
+      "purpose": "Supporting artifact for skill 'governance-audit'."
+    },
+    {
+      "path": "skills/governance-audit/references/determinism-review-scorecard.md",
+      "sha256": "227a8f53f0e620c4271d6d7e17b01384fd99d1cf41ea4ffeb0613f77f2052fda",
+      "purpose": "Supporting artifact for skill 'governance-audit'."
+    },
+    {
+      "path": "skills/governance-audit/references/customization-taxonomy-v1.md",
+      "sha256": "167ab6f5fee3f671ff931013ab81fa1397fcbb5f198d426bfcbb496575b8f0ef",
+      "purpose": "Supporting artifact for skill 'governance-audit'."
+    },
+    {
+      "path": "skills/governance-audit/SKILL.md",
+      "sha256": "fa049e38020d184209f74747db3d60d7c295569a05fc59cdca5aa9f0e56a82d9",
+      "purpose": "Baseline workspace governance assessment workflow."
+    },
+    {
+      "path": "skills/execute-customization-audit/references/.artifacts/responsibility-overlap.routing.json",
+      "sha256": "3448afa737a66d7d9e109028a79a58ff6e2f790b44271d0b94df433a6876eb0f",
+      "purpose": "Supporting artifact for skill 'execute-customization-audit'."
+    },
+    {
+      "path": "skills/execute-customization-audit/references/execute-customization-audit-metrics-checklist.md",
+      "sha256": "28d3f7c35539823f00ec3c3e605b13dcfbbe89e61ac2b4731eac9d13d5c2c32f",
+      "purpose": "Supporting artifact for skill 'execute-customization-audit'."
+    },
+    {
+      "path": "skills/execute-customization-audit/SKILL.md",
+      "sha256": "6ae4bf90de6a97339994a9a5a3b788ee91265324bf22753aece7027491b5301c",
+      "purpose": "Aggregates governance outputs into executive disposition."
+    },
+    {
+      "path": "skills/delivery-status-grid/references/summary-template.md",
+      "sha256": "9f8af457f6d969ab539a1bc5448638b310ae15d5f2473313cd2da1b8af45af5e",
+      "purpose": "Supporting artifact for skill 'delivery-status-grid'."
+    },
+    {
+      "path": "skills/delivery-status-grid/references/risks-and-blockers-template.md",
+      "sha256": "d3ee2cf6558fef5e6fca8ef9c8a1cd74d71840cfe5d847db91e378ceb6992d9a",
+      "purpose": "Supporting artifact for skill 'delivery-status-grid'."
+    },
+    {
+      "path": "skills/delivery-status-grid/references/remaining-template.md",
+      "sha256": "2dbd7ef11093864ab1231d093488a494a19ad2483793d7cd53e313317b8f2962",
+      "purpose": "Supporting artifact for skill 'delivery-status-grid'."
+    },
+    {
+      "path": "skills/delivery-status-grid/references/done-template.md",
+      "sha256": "64fc73da7be4767ef24ceec43ebf341e5f2b783deecfc4adece4e81f310faafd",
+      "purpose": "Supporting artifact for skill 'delivery-status-grid'."
+    },
+    {
+      "path": "skills/delivery-status-grid/SKILL.md",
+      "sha256": "80b7d88d1ac2139564c51ebb68230323cf890cd8655efb7f7302dfeb4f315980",
+      "purpose": "Produces table-first delivery progress views."
+    },
+    {
+      "path": "skills/audit-skill/references/scripts/remediate-20260403-skill-audit.ps1",
+      "sha256": "c40cff8f30f31a25e6e778b31d02b2b83524bd58ab1d3173433cef7f4e72bdd1",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/scripts/refresh-audit-skill-history.ps1",
+      "sha256": "0a70299e2733b6ddabc5e5397da14fed08ff7cbef2ee1c042e5bf785ac6be17f",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/governance-health-overview/references/.artifacts/governance-audit-types-optimization.md",
+      "sha256": "431458da1549c6254e9c98c296bbe6fbcb2d48a54a9910af2e975293b67c61c9",
+      "purpose": "Supporting artifact for skill 'governance-health-overview'."
+    },
+    {
+      "path": "skills/audit-skill/references/scripts/get-audit-skill-metadata.ps1",
+      "sha256": "3fdcd337300594b7f081c2fdb66bbad11bc1a7cd9b7501474035c92ce1bbd7b2",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/governance-health-overview/references/.artifacts/governance-audit.md",
+      "sha256": "0547728309f785444180bda7ff798d6b33600f3c96d0cd1115eae6be48fcb627",
+      "purpose": "Supporting artifact for skill 'governance-health-overview'."
+    },
+    {
+      "path": "skills/governance-health-overview/references/.artifacts/governance-health-overview.summary.md",
+      "sha256": "4dd4c63a1ff3b02643ee5e09fae5d226aee8c0dcbd67a00420c0a00a06803981",
+      "purpose": "Supporting artifact for skill 'governance-health-overview'."
+    },
+    {
+      "path": "skills/request-code-review/SKILL.md",
+      "sha256": "c3b423a958446e1ffa794478184d1beddc44c6ec935d0b54fd2ce6aa60a093bf",
+      "purpose": "Standardizes code-review request workflow."
+    },
+    {
+      "path": "skills/request-code-review/code-reviewer.md",
+      "sha256": "7f5328dca12cb200005ae9d4386f63a9b0acb735ece57f82db206b4a3189ccae",
+      "purpose": "Supporting artifact for skill 'request-code-review'."
+    },
+    {
+      "path": "skills/remediate-review/references/review-response-examples.md",
+      "sha256": "79b36d6a82b1e0c31c22d4eb47e56b0d709bac6dbdefc4168cc4494853cf37fd",
+      "purpose": "Supporting artifact for skill 'remediate-review'."
+    },
+    {
+      "path": "skills/remediate-review/references/remediation-edge-cases.md",
+      "sha256": "553972e96e28fb1cbe816767c227f03a87c4e07e4bda70fb798850c8567db885",
+      "purpose": "Supporting artifact for skill 'remediate-review'."
+    },
+    {
+      "path": "skills/remediate-review/SKILL.md",
+      "sha256": "8c954bd30418cca13d089b3b51a415b1a8afb685a686bbebac3c99db3801dc92",
+      "purpose": "Validates and applies review feedback rigorously."
+    },
+    {
+      "path": "skills/release-simulation/SKILL.md",
+      "sha256": "82816e75006ef96b149a689f499831c0ef625aa7d270448036f315902a81b1e0",
+      "purpose": "Supports pre-release rehearsal and rollback drill validation."
+    },
+    {
+      "path": "skills/release-readiness/SKILL.md",
+      "sha256": "c7891cf580fbcb1b7766429a5bf4307061b5f80ba7139877a7e7a5837c531ab9",
+      "purpose": "Governs release gate evidence and promotion checks."
+    },
+    {
+      "path": "skills/post-release-retrospective/SKILL.md",
+      "sha256": "707bf348745dde39215d8fe90faba42e1574f7743c74af42bcb6369f46a94eb1",
+      "purpose": "Captures post-release outcomes and follow-up actions."
+    },
+    {
+      "path": "skills/optimize-customizations/references/optimization-factor-template.md",
+      "sha256": "8491195fd92436c72b5f1ea261a0466a35b19b2d150ded45827899d5a9b66c51",
+      "purpose": "Supporting artifact for skill 'optimize-customizations'."
+    },
+    {
+      "path": "skills/optimize-customizations/references/compendium-growth-governance.md",
+      "sha256": "5763b8358bc538b7863ce5ff973083f096ba7dcfa511c4642c4166c9368b1f0f",
+      "purpose": "Supporting artifact for skill 'optimize-customizations'."
+    },
+    {
+      "path": "skills/optimize-customizations/SKILL.md",
+      "sha256": "bf57ffda3527b482788db47bbd6af5105d99e5f2572e74a15a86508a77c0da12",
+      "purpose": "Applies concise optimization checks across customization assets."
+    },
+    {
+      "path": "skills/matrix-skill-mapping/references/phase-discipline-lane-agentic-delivery-matrix.md",
+      "sha256": "6e87f431a6905b120aa38aecea57480e885d98429ca7960ca5c760bd4a0ff23e",
+      "purpose": "Supporting artifact for skill 'matrix-skill-mapping'."
+    },
+    {
+      "path": "skills/matrix-skill-mapping/references/mapping-registry.md",
+      "sha256": "8143448e42338d6e3922627522cc8be18faecb30692f37d94dc9e73dc5ae6446",
+      "purpose": "Supporting artifact for skill 'matrix-skill-mapping'."
+    },
+    {
+      "path": "skills/matrix-skill-mapping/SKILL.md",
+      "sha256": "c71416cd53845150370f44a32e2c8830d38f7a7db85abce7004ee485f0ed2f78",
+      "purpose": "Maintains matrix-to-skill coverage mapping integrity."
+    },
+    {
+      "path": "skills/governance-summarize/SKILL.md",
+      "sha256": "70e52be806f4b153f8deea5cdaa643353a21c68559e062f0d4fff18f4dd81416",
+      "purpose": "Produces concise governance brief artifacts."
+    },
+    {
+      "path": "skills/governance-health-overview/references/.artifacts/responsibility-overlap.routing.json",
+      "sha256": "bc54d068458969a4adacd7cedb7dfcfc8c9d5f1768c85c58327ff2d31357039b",
+      "purpose": "Supporting artifact for skill 'governance-health-overview'."
+    },
+    {
+      "path": "skills/governance-health-overview/references/.artifacts/local-governance-run.json",
+      "sha256": "ad942f3b79ea7092448b774a90243816260595dbb69c3b61de866700cf08afcf",
+      "purpose": "Supporting artifact for skill 'governance-health-overview'."
+    },
+    {
+      "path": "skills/governance-health-overview/references/.artifacts/governance-health-overview.latest.json",
+      "sha256": "d29a5e9d2d6dd55587078cdff87cc83251e3ee5e186322374c43b2ef87405669",
+      "purpose": "Supporting artifact for skill 'governance-health-overview'."
+    },
+    {
+      "path": "skills/audit-skill/references/scripts/generate-audit-skill-targeted.ps1",
+      "sha256": "d486bab6bd2861002730b60e660011e44a337a2c8158739c617c7e384b856e4e",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/scripts/generate-audit-skill-full.ps1",
+      "sha256": "60bb33e2b6b840dec15fc7b971f41b86e92a64bef3d0a57455b388f32022a18a",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/scripts/generate-audit-skill-baseline.ps1",
+      "sha256": "cdff482fa280921ce7f5eb2eb5336ca38ceb9a5cd9387ca06f8b375d6f015db7",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-agent/SKILL.md",
+      "sha256": "f5fefe4756a93355f3ea013fe90ce19884babf77133ff0df501e1ee8dcff97a3",
+      "purpose": "Evaluates .agent.md quality and invocation boundaries."
+    },
+    {
+      "path": "skills/acceptance-governance/SKILL.md",
+      "sha256": "9c01aada7486aebfad7c1a63ecf59914c47c04a98bed3b03b1e82c82cd3206af",
+      "purpose": "Evaluates outputs against acceptance criteria and sign-off rules."
+    },
+    {
+      "path": "prompts/optimize-customizations.prompt.md",
+      "sha256": "86f5a6abbee256ab51fa81b72bd92db8d2f77cddaa8a4fdf625414dbf912b076",
+      "purpose": "Runs optimization-focused customization reviews."
+    },
+    {
+      "path": "prompts/governance-item-audit.prompt.md",
+      "sha256": "04d18de08aa814952db64de12f1054b188e89a3a005d8cad5326ba75f54bab35",
+      "purpose": "Runs focused single-item governance audit."
+    },
+    {
+      "path": "prompts/governance-audit-types.prompt.md",
+      "sha256": "5785f1c8135a2582db11c7d381bfbcfcf2cc5097fe8792a3126e09cbe46cfe9f",
+      "purpose": "Runs deep type-level governance audits."
+    },
+    {
+      "path": "prompts/execute-manual-review.prompt.md",
+      "sha256": "50ebc8e590ba69b6a224a5511a31966522b7f195e4c5bacfa0b762e65d97350c",
+      "purpose": "Applies and validates recorded manual review findings."
+    },
+    {
+      "path": "prompts/execute-customization-audit.prompt.md",
+      "sha256": "834025ff503153cca08a002889c8ef8a0f1414a0a0bf40faebc1e01552c4c014",
+      "purpose": "Runs executive aggregate customization governance audits."
+    },
+    {
+      "path": "prompts/execute-artifact-condense.prompt.md",
+      "sha256": "68cc4ca0be946db9013a76153b9a1c9ac075d33391bc79ff68298364e6a8e373",
+      "purpose": "Produces concise rewrite guidance for artifacts."
+    },
+    {
+      "path": "prompts/audit-customization-types.prompt.md",
+      "sha256": "e147effe2be7590d64e94e46f7e173dc8776aada8b4a920e80b2cb1dc8274f61",
+      "purpose": "Executes deterministic cross-type interaction audits."
+    },
+    {
+      "path": "prompts/audit-agent.prompt.md",
+      "sha256": "893027472d3fcae04bd582534724d6b0e9ccd32ff7513881c8949bd5368cc223",
+      "purpose": "Executes agent-focused audit workflows."
+    },
+    {
+      "path": "instructions/technical-docs.instructions.md",
+      "sha256": "61c82515bd8f076a0c33f625587b0b5e8ef093922edc52ccf976da168ad7a025",
+      "purpose": "Governs documentation quality and structure."
+    },
+    {
+      "path": "instructions/task-implementation.instructions.md",
+      "sha256": "f68b474d9ff6596857a6d46728fac3cdb0bff3fe773d55b1a454747849c10a63",
+      "purpose": "Governs plan-linked execution change traceability."
+    },
+    {
+      "path": "instructions/governance-lifecycle.instructions.md",
+      "sha256": "c51a9a1ed54894a3cc704bbc098069ea7e0a03125479436089522e9df1a0f529",
+      "purpose": "Governs lane ownership and handoff behavior."
+    },
+    {
+      "path": "agents/powershell-reviewer.agent.md",
+      "sha256": "9ed227a1b4a9b91296bc0fb75541bcc61e4ee1b368de98e45a63191a4a28d211",
+      "purpose": "Reviews PowerShell assets for safety and maintainability."
+    },
+    {
+      "path": "agents/manual-code-reviewer.agent.md",
+      "sha256": "f74be87ee260d5822ce315a611fa75be86a76ad7be7982fe61956944d6c4b86a",
+      "purpose": "Captures structured manual review observations."
+    },
+    {
+      "path": "agents/governance-briefer.agent.md",
+      "sha256": "a1c72ed907f38506e556f0f141fa132d49e5750fa423a9e371605260226af9f2",
+      "purpose": "Produces concise governance summaries from evidence."
+    },
+    {
+      "path": "agents/code-reviewer.agent.md",
+      "sha256": "e21f797d51235f1144dd60c96469319c09efe37d535228cc5eed3ed5d3f49e41",
+      "purpose": "Specialist for standards-based implementation review."
+    },
+    {
+      "path": "skills/audit-agent/references/audit-agent-report-template.md",
+      "sha256": "87b0f813058bddcff50755019fbe7ece01034c80e5f647c5531ac1e1bff3d973",
+      "purpose": "Supporting artifact for skill 'audit-agent'."
+    },
+    {
+      "path": "skills/audit-agent/references/source-catalog.md",
+      "sha256": "7e7a1fc3985bb7dbe1786c4c3ce36bafd8f6a4e0260d691c4ad2a2a3ab325285",
+      "purpose": "Supporting artifact for skill 'audit-agent'."
+    },
+    {
+      "path": "skills/audit-customization-types/SKILL.md",
+      "sha256": "edbf7bf34b454e97917d1c0fcaa2edcdf472ce5f232f3a10b3685d2ad81c313a",
+      "purpose": "Evaluates customization type interactions and boundaries."
+    },
+    {
+      "path": "skills/audit-customization-types/references/audit-customization-types-report-template.md",
+      "sha256": "00a7ab1eedb8275064093f7576c3a6bed7dd3b01622f692414e06b200724d60e",
+      "purpose": "Supporting artifact for skill 'audit-customization-types'."
+    },
+    {
+      "path": "skills/audit-skill/references/scripts/build-audit-skill-grid.ps1",
+      "sha256": "779cf427acfbdd0b70f9d6441d81cde90c650135a0dbf3a0edb9375c3d374880",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/source-catalog.md",
+      "sha256": "aeefe8ddc66372dcbf06d500a42c9314715a6e16c14764fc602cf013c8420a65",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/skill-review-report-template.md",
+      "sha256": "d9686f49e3776e4e76a6a52a9bcd4daf911e6d2c6eccb0dc9653ac76d7559fca",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/skill-conflict-report-template.md",
+      "sha256": "9772f65b090ff9b09aa11996f0d729cb2c88354700d71890d55c4d96ad9d8b26",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/audit-skill-report-template.md",
+      "sha256": "d9686f49e3776e4e76a6a52a9bcd4daf911e6d2c6eccb0dc9653ac76d7559fca",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/audit-skill-history-entry-template.md",
+      "sha256": "dd469080781d8fccaaeb99c05c6a271aadbb9f67a2950489eb308e3c9c77c57a",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/references/audit-skill-conflict-report-template.md",
+      "sha256": "9772f65b090ff9b09aa11996f0d729cb2c88354700d71890d55c4d96ad9d8b26",
+      "purpose": "Supporting artifact for skill 'audit-skill'."
+    },
+    {
+      "path": "skills/audit-skill/SKILL.md",
+      "sha256": "79b159b935caf18f6f7fe46e174be90809b2375ce382e37ebfeac593f6c8cfb2",
+      "purpose": "Evaluates skill quality, triggers, and self-containment."
+    },
+    {
+      "path": "skills/test-design-review/SKILL.md",
+      "sha256": "f3b82a7caed0ddb34b4e75af0a82e044a9ffe93c9db34f3728c9f5ef15f299f1",
+      "purpose": "Reviews test strategy and coverage rationale."
+    },
+    {
+      "path": "skills/audit-prompts/references/source-catalog.md",
+      "sha256": "ad60640d3a545dba0a3ff3f1ef204b832050a02792b778836dba76efecb34170",
+      "purpose": "Supporting artifact for skill 'audit-prompts'."
+    },
+    {
+      "path": "skills/audit-prompts/SKILL.md",
+      "sha256": "dd772e7f175f81e99deff5a19ebf9a5eda130f5a20ce105accf60bde9b70694a",
+      "purpose": "Evaluates prompt execution contracts and safety."
+    },
+    {
+      "path": "skills/audit-powershell/references/scripts/Invoke-PowerShellScriptReview.ps1",
+      "sha256": "4958795e6e454e14d66b32aea59d71b318660f28c6f57a0b46cb71e199354ca5",
+      "purpose": "Supporting artifact for skill 'audit-powershell'."
+    },
+    {
+      "path": "skills/audit-powershell/SKILL.md",
+      "sha256": "5bbf7713bdcc401a2d4080fe812404db60a0d659916504a1263f49cdb0b7c632",
+      "purpose": "Evaluates PowerShell script safety and style quality."
+    },
+    {
+      "path": "skills/audit-instructions/references/source-catalog.md",
+      "sha256": "76163606aa348f40f080bd625e292959379062515b7696c5af24504b51ad03d0",
+      "purpose": "Supporting artifact for skill 'audit-instructions'."
+    },
+    {
+      "path": "skills/audit-instructions/references/audit-instructions-report-template.md",
+      "sha256": "3ca4f6f0fb20f507b04ed0b927a74dafda176860ab7e16905692be4c694b2f42",
+      "purpose": "Supporting artifact for skill 'audit-instructions'."
+    },
+    {
+      "path": "skills/audit-instructions/SKILL.md",
+      "sha256": "f1e8805f5b7e81bfe3fad46d44fb383f89c36c1011d3b2f74d936f41a338cce2",
+      "purpose": "Evaluates instruction integrity and applyTo correctness."
+    },
+    {
+      "path": "skills/audit-executor/SKILL.md",
+      "sha256": "dfebe2779060ae58bfac55ca1e275ff072e47baae4f49c370b5f606a623ebc8c",
+      "purpose": "Coordinates full multi-type governance audit execution."
+    },
+    {
+      "path": "skills/audit-customization-types/references/source-catalog.md",
+      "sha256": "49553011e83474a3a32e95e24a852b08dc44f25c05538f1aab67a862b5b15fda",
+      "purpose": "Supporting artifact for skill 'audit-customization-types'."
+    },
+    {
+      "path": "skills/audit-prompts/references/audit-prompts-report-template.md",
+      "sha256": "6fe3ffaea3d745ba3d533c4d04cf2031bdeb75bcf3466d3b72d026ed633e2a36",
+      "purpose": "Supporting artifact for skill 'audit-prompts'."
+    },
+    {
+      "path": "skills/test-orchestration/SKILL.md",
+      "sha256": "0eec134ac54e944576123aa9a5c4f7927fdfab955a02287b3c58819088c4e9b7",
+      "purpose": "Coordinates multi-discipline test evidence and outcomes."
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "pluginId": "PLG-13",
+  "pluginName": "shadcn-tailwind-system",
+  "pluginVersion": "1.0.0",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "ed534dd39909336b05b0fb80f4cd8254d3ccf10f9242dc068c85d79ab83d3070",
+      "purpose": "Plugin manifest metadata and dependency declarations."
+    },
+    {
+      "path": "skills/shadcn-source-curation/SKILL.md",
+      "sha256": "5e4bf75eedcbdda465350a1dfbb10f2eefbe549441f8d5fbc41d128a7353ecdd",
+      "purpose": "Core capability definition for skill 'shadcn-source-curation'."
+    },
+    {
+      "path": "skills/shadcn-testing/SKILL.md",
+      "sha256": "508db6a85e665d56bb13ddb30ae519e268d0fc7559c9c7f9f6d9a81afc8db794",
+      "purpose": "Core capability definition for skill 'shadcn-testing'."
+    },
+    {
+      "path": "skills/shadcn-theming/SKILL.md",
+      "sha256": "0d5b7117c9e84ae1959686698ea75e5ed85ce207a6d65d2a3798fd8e4f70d50d",
+      "purpose": "Core capability definition for skill 'shadcn-theming'."
+    },
+    {
+      "path": "skills/tailwind-ci-integration/SKILL.md",
+      "sha256": "24e9b613ce2bb9036cd53b4da449b42cfa11653c463494c4963dabe652e5ee04",
+      "purpose": "Core capability definition for skill 'tailwind-ci-integration'."
+    },
+    {
+      "path": "skills/tailwind-ci-integration/references/source-catalog.md",
+      "sha256": "8bfbd9d81e6620277cf35d3d529535c5c7cd44393fe97cd9456f7b3a60d2860d",
+      "purpose": "Supporting artifact for skill 'tailwind-ci-integration'."
+    },
+    {
+      "path": "skills/tailwind-component-design/SKILL.md",
+      "sha256": "a720829646220babd090ac74da809a63d087e8d8add852268f136efef12395a4",
+      "purpose": "Core capability definition for skill 'tailwind-component-design'."
+    },
+    {
+      "path": "skills/tailwind-component-design/references/source-catalog.md",
+      "sha256": "7bb80141f1c810f4ef5dcf7d0fdedc983f7c89232cd539175eb1af58c079cb7a",
+      "purpose": "Supporting artifact for skill 'tailwind-component-design'."
+    },
+    {
+      "path": "skills/tailwind-design-system/SKILL.md",
+      "sha256": "a4420b2453d38e06558320f4bfd0bf31a7a0d0c14d3640d79c667cefc46efeb0",
+      "purpose": "Core capability definition for skill 'tailwind-design-system'."
+    },
+    {
+      "path": "skills/tailwind-design-system/references/source-catalog.md",
+      "sha256": "8e6f3cd33886c7e8eb73fa64b47689372a366d1023869e8e1f4358d47ac7a1d3",
+      "purpose": "Supporting artifact for skill 'tailwind-design-system'."
+    },
+    {
+      "path": "skills/tailwind-orchestrator/SKILL.md",
+      "sha256": "c8ff8609c5620eb0253ab31667601fbf8802a8778e523d194b0e2b205d0358d9",
+      "purpose": "Core capability definition for skill 'tailwind-orchestrator'."
+    },
+    {
+      "path": "skills/tailwind-orchestrator/references/source-catalog.md",
+      "sha256": "b63e8c9bd84daa58c3b63edb7dd773bf3e971dacffc917ea5a555113ceb82f8f",
+      "purpose": "Supporting artifact for skill 'tailwind-orchestrator'."
+    },
+    {
+      "path": "skills/tailwind-quality-gate/SKILL.md",
+      "sha256": "5da2a087aef3fb1722b483ac8c6142df0cace9e43a4ff9a01200e90eb4570771",
+      "purpose": "Core capability definition for skill 'tailwind-quality-gate'."
+    },
+    {
+      "path": "skills/tailwind-quality-gate/references/source-catalog.md",
+      "sha256": "41e2f8476836b3bad2136be32501861bb8209015a95ff74a758ff2dce39dcda8",
+      "purpose": "Supporting artifact for skill 'tailwind-quality-gate'."
+    },
+    {
+      "path": "skills/tailwind-setup/SKILL.md",
+      "sha256": "b401a1bb2e66e05cc82a704621e71455db51b295b9b3bb00fdcbcd902e19547e",
+      "purpose": "Core capability definition for skill 'tailwind-setup'."
+    },
+    {
+      "path": "skills/tailwind-setup/references/source-catalog.md",
+      "sha256": "317e695b4c3a235164edf822a01c66aeb0b7a29cc914957bcbc1a9ef12182163",
+      "purpose": "Supporting artifact for skill 'tailwind-setup'."
+    },
+    {
+      "path": "skills/shadcn-setup/SKILL.md",
+      "sha256": "9cf48c437620bb444085857cbf3ba259cb6f76cf31cf16d6176f2d457e026847",
+      "purpose": "Core capability definition for skill 'shadcn-setup'."
+    },
+    {
+      "path": "skills/tailwind-source-curation/SKILL.md",
+      "sha256": "4b6bd830b832c0232ed8d2b355457a1800e9e33a4d4d8939f8b731289d19bbbd",
+      "purpose": "Core capability definition for skill 'tailwind-source-curation'."
+    },
+    {
+      "path": "skills/shadcn-registry/SKILL.md",
+      "sha256": "ede6cd5f53957338b18042a28229a6523f0d9bd79aa332b442ce65f0dba4f032",
+      "purpose": "Core capability definition for skill 'shadcn-registry'."
+    },
+    {
+      "path": "skills/shadcn-orchestrator/SKILL.md",
+      "sha256": "904e8b4c90f6b0502dd924d28a52bfcd183c8016b9911b03677a02c91a1518a9",
+      "purpose": "Core capability definition for skill 'shadcn-orchestrator'."
+    },
+    {
+      "path": "agents/ux-designer.agent.md",
+      "sha256": "eae58b89ffb2e0db0410aad0692c5b75c1d06e1a60c4fc210f78765d743df08d",
+      "purpose": "Agent definition supporting plugin capability workflows."
+    },
+    {
+      "path": "agents/web-frontend-engineer.agent.md",
+      "sha256": "651a9cabd397454c2f0356886e5968ec09b35a2610480222a6a6a08651ab995e",
+      "purpose": "Agent definition supporting plugin capability workflows."
+    },
+    {
+      "path": "instructions/ux-design.instructions.md",
+      "sha256": "30159d3abcc057c853d2492aa00e3600fe09508ca566f8474f7093d105211e2b",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "instructions/web-frontend.instructions.md",
+      "sha256": "49c14c2334becf67c199bc510f28f1872e817eaa826d13eedf109fdde26ab763",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "prompts/scaffold-web-ux-quality-gate.prompt.md",
+      "sha256": "f8a8cf6d68a327068f218c616382a202cf87286ed77103fbebe5c0a6cc1d90c7",
+      "purpose": "Prompt contract used to execute plugin-specific workflows."
+    },
+    {
+      "path": "skills/generate-web-icons/SKILL.md",
+      "sha256": "1877482b03c2d9bbbd221dace6331b761dab80f7c63487c8bf4b138a2618e6ee",
+      "purpose": "Core capability definition for skill 'generate-web-icons'."
+    },
+    {
+      "path": "skills/generate-web-icons/references/source-catalog.md",
+      "sha256": "66d296564885d272a43853db37175d541a9e95f36192317f44a8d81c8afcc21c",
+      "purpose": "Supporting artifact for skill 'generate-web-icons'."
+    },
+    {
+      "path": "skills/shadcn-accessibility/SKILL.md",
+      "sha256": "bc99c2430e91fc74d1a593a8595d405104cf1345ac077778923a60f57e0f54a1",
+      "purpose": "Core capability definition for skill 'shadcn-accessibility'."
+    },
+    {
+      "path": "skills/shadcn-animation/SKILL.md",
+      "sha256": "093a5e4d3b0d0fb0fda701f3981fe18e20995e0f05164d553e29f199f862f816",
+      "purpose": "Core capability definition for skill 'shadcn-animation'."
+    },
+    {
+      "path": "skills/shadcn-ci-integration/SKILL.md",
+      "sha256": "f1ada12d792ef797f6aa2c797364aba25ba085fa0cfde3a0df1a0ec9d06480a7",
+      "purpose": "Core capability definition for skill 'shadcn-ci-integration'."
+    },
+    {
+      "path": "skills/shadcn-component-design/SKILL.md",
+      "sha256": "f486de5a180885adb381793480f1885ddb2533b4b03d6c82c9c14351cfccfa80",
+      "purpose": "Core capability definition for skill 'shadcn-component-design'."
+    },
+    {
+      "path": "skills/shadcn-data-display/SKILL.md",
+      "sha256": "dfde395671eaeac7c92e0cf710975d1715729cfd8a03ef267ec1b743cded839a",
+      "purpose": "Core capability definition for skill 'shadcn-data-display'."
+    },
+    {
+      "path": "skills/shadcn-design-system/SKILL.md",
+      "sha256": "8d158138cdb86a8ad1ef74d30283dd908b8128d70eb42789422d88be477d7aa5",
+      "purpose": "Core capability definition for skill 'shadcn-design-system'."
+    },
+    {
+      "path": "skills/shadcn-forms/SKILL.md",
+      "sha256": "3c48c9e3aac6be930d2509ecda302b9840dcbeda90d1e3e4cd1a0501ab1ed34f",
+      "purpose": "Core capability definition for skill 'shadcn-forms'."
+    },
+    {
+      "path": "skills/shadcn-migration/SKILL.md",
+      "sha256": "3d1518650271eb9f0092dab04bac9b8ce9738aae942a37d244464eddb7430337",
+      "purpose": "Core capability definition for skill 'shadcn-migration'."
+    },
+    {
+      "path": "skills/shadcn-quality-gate/SKILL.md",
+      "sha256": "698d9abc8c8cdba1791e8ab8582d463a292c06c0ba2626f19e921f16bbc08a1f",
+      "purpose": "Core capability definition for skill 'shadcn-quality-gate'."
+    },
+    {
+      "path": "skills/tailwind-source-curation/references/source-catalog.md",
+      "sha256": "3492f55df6a80c6696996aaeec3dd297d540fe2cd5ccfc01b0bd47b76d723865",
+      "purpose": "Supporting artifact for skill 'tailwind-source-curation'."
+    }
+  ]
+}

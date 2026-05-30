@@ -1,0 +1,168 @@
+{
+  "pluginId": "PLG-12",
+  "pluginName": "sveltekit-engineering",
+  "pluginVersion": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "digestAlgorithm": "SHA-256",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "2e24c4d5a27828f8969b49dd7bd53cd153369908085c1f3824f6edb3978c0365"
+    },
+    {
+      "path": "skills/sveltekit-load/SKILL.md",
+      "sha256": "3701ff17c84b7db226b66ee2ba111256617c268126a74d14a068afc68745e311"
+    },
+    {
+      "path": "skills/sveltekit-load/references/source-catalog.md",
+      "sha256": "946e92828494c39e80d5b27da05452d3fe582714896de5dfd8331eb4ede215e5"
+    },
+    {
+      "path": "skills/sveltekit-observability/SKILL.md",
+      "sha256": "35f3e5a35692fbe76d467f0e630e6ae86117958cf1aec62ff17b3a74af7c3001"
+    },
+    {
+      "path": "skills/sveltekit-observability/references/source-catalog.md",
+      "sha256": "57ff35e323ca828c04c51af240019f863cfe49aa5f18f28528090556d8a6907b"
+    },
+    {
+      "path": "skills/sveltekit-orchestrator/SKILL.md",
+      "sha256": "bb2d11229fde5cc51f0237490e8fb3b354b245f58a6d8bc55bf5ad2a46608310"
+    },
+    {
+      "path": "skills/sveltekit-orchestrator/references/source-catalog.md",
+      "sha256": "9341652b1c8a8f86cbd6947eedb05cc5cdb75b6c32ca2f087706aa231806e305"
+    },
+    {
+      "path": "skills/sveltekit-packaging/SKILL.md",
+      "sha256": "7178223bdad28cc62bf0316b76d8f066de3a11fa3ab407f382309f80d82fb99c"
+    },
+    {
+      "path": "skills/sveltekit-hooks/references/source-catalog.md",
+      "sha256": "2d4a3f7aea7e19f83ce1766412327a44fa79f5223181c40759ffcdbdf5c6770d"
+    },
+    {
+      "path": "skills/sveltekit-packaging/references/source-catalog.md",
+      "sha256": "7b8196a32eea7fa831265f4a5e9761e776b167dd090a480c8664427fc75b24b0"
+    },
+    {
+      "path": "skills/sveltekit-page-options/references/source-catalog.md",
+      "sha256": "6d4a8b71cac53f8dbc25f6394f586709c39b8f33cc5de7688a3962c80946d357"
+    },
+    {
+      "path": "skills/sveltekit-routing/SKILL.md",
+      "sha256": "1ee39ebc80081cba052645c36842f1ac3a0fd976a1dd3c5c5f1b07640f330587"
+    },
+    {
+      "path": "skills/sveltekit-routing/references/source-catalog.md",
+      "sha256": "3ab3de54739bd41c15250e3a67d9c5581cce1ff51a3ca12b75b95feefbae68c4"
+    },
+    {
+      "path": "skills/sveltekit-server-endpoints/SKILL.md",
+      "sha256": "127a2f37d325265fa736b00a643e48c0af8efebe0132c18dd3d7117799c4cc68"
+    },
+    {
+      "path": "skills/sveltekit-server-endpoints/references/source-catalog.md",
+      "sha256": "baa4958f3cc85cedf2a7cfd6f96fc591b3feb520488824d733c71b99ffc349ce"
+    },
+    {
+      "path": "skills/sveltekit-state-management/SKILL.md",
+      "sha256": "56b51e6766a52da09115754cf088b23219bc45720c6fa321d33e4123274c74cf"
+    },
+    {
+      "path": "skills/sveltekit-state-management/references/source-catalog.md",
+      "sha256": "113202aa2a733472d4cf768bd1037c6dc6a27f77b14d984d2baadef628594297"
+    },
+    {
+      "path": "skills/sveltekit-page-options/SKILL.md",
+      "sha256": "ebc075817b8cd519d69e2fb0fb30a5cd1c989b9b8985bc916e235a90d14a68b5"
+    },
+    {
+      "path": "skills/sveltekit-testing/SKILL.md",
+      "sha256": "55d663f61f35724a7ca65545c6e5a48a9b681e3c80bbc34215de81b3c74dd503"
+    },
+    {
+      "path": "skills/sveltekit-hooks/SKILL.md",
+      "sha256": "1959dcf5e52a9f3bc2b82a8370adc45f54984ab6de029ce4742095355aa3d060"
+    },
+    {
+      "path": "skills/sveltekit-errors/SKILL.md",
+      "sha256": "be7ae3c02175681d24c7ce4c9f3e9f24f398bd0c9a3648bd232c7af3f686fe0d"
+    },
+    {
+      "path": "agents/web-frontend-engineer.agent.md",
+      "sha256": "651a9cabd397454c2f0356886e5968ec09b35a2610480222a6a6a08651ab995e"
+    },
+    {
+      "path": "instructions/secure-coding.instructions.md",
+      "sha256": "647b74096502508a655973b6161ac10f646620bc63a92beec5084376a7e7630c"
+    },
+    {
+      "path": "instructions/web-frontend.instructions.md",
+      "sha256": "49c14c2334becf67c199bc510f28f1872e817eaa826d13eedf109fdde26ab763"
+    },
+    {
+      "path": "prompts/execute-delivery.prompt.md",
+      "sha256": "3f95cb30768d39d2f3dd4df306c94c28be1124184ed3e192fac11e5b7d2b0039"
+    },
+    {
+      "path": "skills/sveltekit-actions/SKILL.md",
+      "sha256": "ef82711e6928e4b29c3217022d40dff82c400a69e1b64126c47b2adb72abd05d"
+    },
+    {
+      "path": "skills/sveltekit-actions/references/source-catalog.md",
+      "sha256": "4cfa080df89a1dc7e2464dd182b61903743bf7465dfd577ab066f7ab12dd27ee"
+    },
+    {
+      "path": "skills/sveltekit-adapters/SKILL.md",
+      "sha256": "4b74fa5ebe3405a6070ba5c67291221aa9eaeaa8d6f2ed072f36000b0e7dd130"
+    },
+    {
+      "path": "skills/sveltekit-errors/references/source-catalog.md",
+      "sha256": "6c816656aef2ba7ae9b558d215cdaab0830a54458000502bac145ff9365c44c4"
+    },
+    {
+      "path": "skills/sveltekit-adapters/references/source-catalog.md",
+      "sha256": "ea963b7ccec2b29de0b9c1cc48b428ff9b88621d2820de93a804725bd1a617fa"
+    },
+    {
+      "path": "skills/sveltekit-advanced-routing/references/source-catalog.md",
+      "sha256": "19fda9f527bd2a584ec2e5258b3e30e7d2397d86598890ea30ec43fe902fa75f"
+    },
+    {
+      "path": "skills/sveltekit-auth/SKILL.md",
+      "sha256": "49d38a94dad4dfb975a2c89a9c70019aace49c97f7c48b78a41b4b89136f4d67"
+    },
+    {
+      "path": "skills/sveltekit-auth/references/source-catalog.md",
+      "sha256": "aa66e4d40f1ba029768b9e0791df0600a59509b7ea2473edf743741a78df2a4b"
+    },
+    {
+      "path": "skills/sveltekit-configuration/SKILL.md",
+      "sha256": "20da6d7d7a698c1223ee7e53eb0351b59f714ada1ab3a45cdc5f9988c30be0e5"
+    },
+    {
+      "path": "skills/sveltekit-configuration/references/source-catalog.md",
+      "sha256": "e000986a9b972c717d833ef9fa61f90dac6465c491e30dff071c3370d850f131"
+    },
+    {
+      "path": "skills/sveltekit-environment/SKILL.md",
+      "sha256": "2c01aaa4f16d300cdda6aef2a3b939893572d19387dcbac1e858f948e16ec7ce"
+    },
+    {
+      "path": "skills/sveltekit-environment/references/source-catalog.md",
+      "sha256": "14f7530f09cd89ec0aa3e8e7f43847b02f0b648a3b40d68efb2870d604c517ab"
+    },
+    {
+      "path": "skills/sveltekit-advanced-routing/SKILL.md",
+      "sha256": "f8b9947d5c4c58a173608e04e5d362e4c5e0502cea548109567059baa82e1fa1"
+    },
+    {
+      "path": "skills/sveltekit-testing/references/source-catalog.md",
+      "sha256": "8cc503322f4469e300033485d4f9ce40eaa50eb0400a35239bd9e60056865a7a"
+    }
+  ],
+  "aggregateDigest": "707e206c6934f1cc52bd42f61b62d0fb32795b3e20757da14fab4ff054f86ebe"
+}

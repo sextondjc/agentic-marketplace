@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0",
+  "id": "core-intake-governance",
+  "name": "core-intake-governance",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "description": "Deterministic intake, lifecycle governance, and cross-plugin control plane.",
+  "capabilities": [
+    "Deterministic intake, lifecycle governance, and cross-plugin control plane."
+  ],
+  "dependencies": [],
+  "assets": {
+    "agents": [
+      "orchestrator.agent.md"
+    ],
+    "instructions": [
+      "governance-lifecycle.instructions.md",
+      "request-economy.instructions.md",
+      "secure-coding.instructions.md",
+      "governance-release.instructions.md",
+      "governance-naming-conventions.instructions.md"
+    ],
+    "prompts": [
+      "run-delivery-pattern.prompt.md",
+      "execute-delivery.prompt.md",
+      "review-project.prompt.md"
+    ],
+    "skills": [
+      "work-intake-governance",
+      "route-customization",
+      "compose-skills",
+      "writing-plans",
+      "task-research",
+      "task-execution",
+      "plans",
+      "scope-change-control",
+      "taxonomy-tag-registry"
+    ]
+  }
+}

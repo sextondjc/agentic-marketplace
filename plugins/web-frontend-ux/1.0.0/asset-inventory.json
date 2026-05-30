@@ -1,0 +1,283 @@
+{
+  "pluginId": "PLG-09",
+  "pluginName": "web-frontend-ux",
+  "pluginVersion": "1.0.0",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "1467da88ea3ed851dd14c0b6bb246c073c1bd8984f902a07e9944bd7d3b56656",
+      "purpose": "Plugin manifest metadata and dependency declarations."
+    },
+    {
+      "path": "skills/web-ux-motion-animation/references/source-catalog.md",
+      "sha256": "0ee5900860030d761702f27e975a7d6719c0be6f79aaa6d4eee8c40c0781b205",
+      "purpose": "Supporting artifact for skill 'web-ux-motion-animation'."
+    },
+    {
+      "path": "skills/web-ux-notification-alerts/SKILL.md",
+      "sha256": "61a234ae9114878f2d467bcc0f02895970d7b9ae4fc5206d4160decb2b7f60f9",
+      "purpose": "Core capability definition for skill 'web-ux-notification-alerts'."
+    },
+    {
+      "path": "skills/web-ux-notification-alerts/references/source-catalog.md",
+      "sha256": "5205a6deaf3d9dfdb4306f9a2a98f277f710f2bf9a395cf79e0d8ee4b0363e1a",
+      "purpose": "Supporting artifact for skill 'web-ux-notification-alerts'."
+    },
+    {
+      "path": "skills/web-ux-offline-resilience/SKILL.md",
+      "sha256": "3e8fe611366bff0b2820c3810b5c22db098507f3bda6ba97cc04bc62695bf47e",
+      "purpose": "Core capability definition for skill 'web-ux-offline-resilience'."
+    },
+    {
+      "path": "skills/web-ux-offline-resilience/references/source-catalog.md",
+      "sha256": "2f40797e833be54e6ac0c201b54435add6e41411416f3d94a3c623aa9bf583e8",
+      "purpose": "Supporting artifact for skill 'web-ux-offline-resilience'."
+    },
+    {
+      "path": "skills/web-ux-onboarding-progressive-disclosure/SKILL.md",
+      "sha256": "512e396547ccf9de44516d3677be45abb2b2bdffe2d6581f830e5aee26963569",
+      "purpose": "Core capability definition for skill 'web-ux-onboarding-progressive-disclosure'."
+    },
+    {
+      "path": "skills/web-ux-onboarding-progressive-disclosure/references/source-catalog.md",
+      "sha256": "39558feae81b227c80cc1e81e315527d3dc488e72a3d078b000704729a66a0ab",
+      "purpose": "Supporting artifact for skill 'web-ux-onboarding-progressive-disclosure'."
+    },
+    {
+      "path": "skills/web-ux-performance/SKILL.md",
+      "sha256": "82baa0167d7a1c092565685e9fdcac7a508d97fc24149722587c112f92b14c7c",
+      "purpose": "Core capability definition for skill 'web-ux-performance'."
+    },
+    {
+      "path": "skills/web-ux-performance/references/source-catalog.md",
+      "sha256": "fe47b1581f3d61041a3de8f43c0770b4a2cbd59e68a76ae2c4c0c86b3312c5ab",
+      "purpose": "Supporting artifact for skill 'web-ux-performance'."
+    },
+    {
+      "path": "skills/web-ux-privacy-consent/SKILL.md",
+      "sha256": "7a0b113a91b700ae397eb4ae1ea316a700d8296fc8863f972e5c856b6f53f82e",
+      "purpose": "Core capability definition for skill 'web-ux-privacy-consent'."
+    },
+    {
+      "path": "skills/web-ux-privacy-consent/references/source-catalog.md",
+      "sha256": "47f68e637c0536d2bea382287a286508835e7492fc8a67014bd96fe185ecc225",
+      "purpose": "Supporting artifact for skill 'web-ux-privacy-consent'."
+    },
+    {
+      "path": "skills/web-ux-motion-animation/SKILL.md",
+      "sha256": "18eb1e5ac7d560dab863aa3e352b2ae46607697c16a4159d86a957c948fd4261",
+      "purpose": "Core capability definition for skill 'web-ux-motion-animation'."
+    },
+    {
+      "path": "skills/web-ux-quality-gate/SKILL.md",
+      "sha256": "20f8db5058b23273afb4e1f45bf566aac2f6fce3d2503a68e1b3d28de2aaa213",
+      "purpose": "Core capability definition for skill 'web-ux-quality-gate'."
+    },
+    {
+      "path": "skills/web-ux-quality-gate/references/unified-release-recommendation-template.md",
+      "sha256": "cd035799cdaa8a19422a589349c0d00dfd559e7eb44c198e8eeb6dfdc10c5785",
+      "purpose": "Supporting artifact for skill 'web-ux-quality-gate'."
+    },
+    {
+      "path": "skills/web-ux-responsive-design/SKILL.md",
+      "sha256": "76b14fff09bb406904ed447a4d00c850ef817a636bf5f3d1a23d4e28b230a387",
+      "purpose": "Core capability definition for skill 'web-ux-responsive-design'."
+    },
+    {
+      "path": "skills/web-ux-responsive-design/references/source-catalog.md",
+      "sha256": "e8f0a7db825b6441de09510bf1c005fd5af3816ce1b96127df1cbf783b2ba86c",
+      "purpose": "Supporting artifact for skill 'web-ux-responsive-design'."
+    },
+    {
+      "path": "skills/web-ux-supportability-self-service/SKILL.md",
+      "sha256": "6bb2ea4a155e673581d4d5f6ef225503e0c2da3dac0c93c28c5b7d2ded69ff1e",
+      "purpose": "Core capability definition for skill 'web-ux-supportability-self-service'."
+    },
+    {
+      "path": "skills/web-ux-supportability-self-service/references/source-catalog.md",
+      "sha256": "6685bd8032cce1fc4f66143e638ee9f06e67923b3e4f58b74508a10a74c4278a",
+      "purpose": "Supporting artifact for skill 'web-ux-supportability-self-service'."
+    },
+    {
+      "path": "skills/web-ux-telemetry-instrumentation/SKILL.md",
+      "sha256": "e575cc99a604b3721ccb1086d705bbe5ee248f0c9bba7dded07e12d772459a65",
+      "purpose": "Core capability definition for skill 'web-ux-telemetry-instrumentation'."
+    },
+    {
+      "path": "skills/web-ux-telemetry-instrumentation/references/source-catalog.md",
+      "sha256": "099a8bb95162c32402a8705213335c863354ca70217871fdc84cf251e3cb968d",
+      "purpose": "Supporting artifact for skill 'web-ux-telemetry-instrumentation'."
+    },
+    {
+      "path": "skills/web-ux-trust-risk-signals/SKILL.md",
+      "sha256": "871442a3d89edc0f69e2983b2bb0974e4ed362081cc46648021b0f2ebd844990",
+      "purpose": "Core capability definition for skill 'web-ux-trust-risk-signals'."
+    },
+    {
+      "path": "skills/web-ux-trust-risk-signals/references/source-catalog.md",
+      "sha256": "07839a6446230b34211d2ef1eabff87e857f1f6975dcca9e0662539872903a6c",
+      "purpose": "Supporting artifact for skill 'web-ux-trust-risk-signals'."
+    },
+    {
+      "path": "skills/web-ux-usability/SKILL.md",
+      "sha256": "b64ba1a785f036ae166a914703a696b1f884db29042125053e2d0cc580b380dc",
+      "purpose": "Core capability definition for skill 'web-ux-usability'."
+    },
+    {
+      "path": "skills/web-ux-usability/references/source-catalog.md",
+      "sha256": "08d87e628efe64a1507afef7ff5aabf587444fd0cb752e23539695084a45c536",
+      "purpose": "Supporting artifact for skill 'web-ux-usability'."
+    },
+    {
+      "path": "skills/web-ux-quality-gate/references/source-catalog.md",
+      "sha256": "99cbe519e6878ae4b1f2b1588c31ad01e9995c3b9e54b85cb65783f5332052f4",
+      "purpose": "Supporting artifact for skill 'web-ux-quality-gate'."
+    },
+    {
+      "path": "skills/web-ux-visual-consistency/SKILL.md",
+      "sha256": "d6fd223e4c39e19d22795e6447272abec16b887efc8d7c16d6a823ca16dc3d27",
+      "purpose": "Core capability definition for skill 'web-ux-visual-consistency'."
+    },
+    {
+      "path": "skills/web-ux-localization/references/source-catalog.md",
+      "sha256": "934a964f39ff2e88c20533f451f7c264fb95d8c9aa32d5a84891a7b359e15e12",
+      "purpose": "Supporting artifact for skill 'web-ux-localization'."
+    },
+    {
+      "path": "skills/web-ux-information-architecture/references/source-catalog.md",
+      "sha256": "8812947fe99fc5df4d3e8b3d974c7ee3d0424affe5940ad5a43b90064403870a",
+      "purpose": "Supporting artifact for skill 'web-ux-information-architecture'."
+    },
+    {
+      "path": "agents/ux-designer.agent.md",
+      "sha256": "eae58b89ffb2e0db0410aad0692c5b75c1d06e1a60c4fc210f78765d743df08d",
+      "purpose": "Agent definition supporting plugin capability workflows."
+    },
+    {
+      "path": "agents/web-frontend-engineer.agent.md",
+      "sha256": "651a9cabd397454c2f0356886e5968ec09b35a2610480222a6a6a08651ab995e",
+      "purpose": "Agent definition supporting plugin capability workflows."
+    },
+    {
+      "path": "instructions/secure-coding.instructions.md",
+      "sha256": "647b74096502508a655973b6161ac10f646620bc63a92beec5084376a7e7630c",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "instructions/ux-design.instructions.md",
+      "sha256": "30159d3abcc057c853d2492aa00e3600fe09508ca566f8474f7093d105211e2b",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "instructions/web-frontend.instructions.md",
+      "sha256": "49c14c2334becf67c199bc510f28f1872e817eaa826d13eedf109fdde26ab763",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "prompts/review-technical-docs.prompt.md",
+      "sha256": "65fe2d20077866d99fc66bb3efaaf96838dc01bc4efdb5d68c1b0d3de7c372b7",
+      "purpose": "Prompt contract used to execute plugin-specific workflows."
+    },
+    {
+      "path": "prompts/scaffold-web-ux-quality-gate.prompt.md",
+      "sha256": "f8a8cf6d68a327068f218c616382a202cf87286ed77103fbebe5c0a6cc1d90c7",
+      "purpose": "Prompt contract used to execute plugin-specific workflows."
+    },
+    {
+      "path": "skills/build-web-frontend/SKILL.md",
+      "sha256": "7d9f12c7dd4f5d9a176ecc388c9dd2bcffe2caa0665046d941cd08226d245cd4",
+      "purpose": "Core capability definition for skill 'build-web-frontend'."
+    },
+    {
+      "path": "skills/design-web-ux/SKILL.md",
+      "sha256": "1cb8d62f2eba98b45f3fb06db32a71382289257bc5b6d20b396df285ec297775",
+      "purpose": "Core capability definition for skill 'design-web-ux'."
+    },
+    {
+      "path": "skills/web-ux-accessibility/SKILL.md",
+      "sha256": "bd472956689aff4ed4841e0454b0834522132c3b476bf21db32a6bdf8414cda2",
+      "purpose": "Core capability definition for skill 'web-ux-accessibility'."
+    },
+    {
+      "path": "skills/web-ux-accessibility/references/source-catalog.md",
+      "sha256": "84f508b67bada62ca61363622293fbe7be1ad8df55652e9d1f63eae8b803db62",
+      "purpose": "Supporting artifact for skill 'web-ux-accessibility'."
+    },
+    {
+      "path": "skills/web-ux-localization/SKILL.md",
+      "sha256": "90ed932c445a0dec9adbbe0bf65d52b598632e9ebb955bad97bc5474049b8f27",
+      "purpose": "Core capability definition for skill 'web-ux-localization'."
+    },
+    {
+      "path": "skills/web-ux-account-identity-flows/SKILL.md",
+      "sha256": "8b4b93fcd72daa1b296a65c047321cd576f68e5d8b279a4183838f04bc938306",
+      "purpose": "Core capability definition for skill 'web-ux-account-identity-flows'."
+    },
+    {
+      "path": "skills/web-ux-content-clarity/SKILL.md",
+      "sha256": "ff480044577c9dca26c3d7f22f1b7a62a3b9fc41fee2da7cdb6b8d193228e159",
+      "purpose": "Core capability definition for skill 'web-ux-content-clarity'."
+    },
+    {
+      "path": "skills/web-ux-content-clarity/references/source-catalog.md",
+      "sha256": "f9287635e3a208a897e3900c248824a26036b2274eab851a3359f09325006002",
+      "purpose": "Supporting artifact for skill 'web-ux-content-clarity'."
+    },
+    {
+      "path": "skills/web-ux-data-dense-interfaces/SKILL.md",
+      "sha256": "4c29a43f155cabf65b2c5a4f4fdd8075d5fd662e0777f28848b4999a69d445e8",
+      "purpose": "Core capability definition for skill 'web-ux-data-dense-interfaces'."
+    },
+    {
+      "path": "skills/web-ux-data-dense-interfaces/references/source-catalog.md",
+      "sha256": "d8bd64b4cf32d96c9d79d037b26f9aa0e4fbfcae172e98cf94147791ad21c4cb",
+      "purpose": "Supporting artifact for skill 'web-ux-data-dense-interfaces'."
+    },
+    {
+      "path": "skills/web-ux-experimentation-evidence/SKILL.md",
+      "sha256": "e023faca30728295be2f4a36434427e81b5cf37810bc6e58bee460a3f1b49075",
+      "purpose": "Core capability definition for skill 'web-ux-experimentation-evidence'."
+    },
+    {
+      "path": "skills/web-ux-experimentation-evidence/references/source-catalog.md",
+      "sha256": "40e3000afe39d425922ea32ecb7af2b06dca8e1c1752bd0f7fca80c2d6a551af",
+      "purpose": "Supporting artifact for skill 'web-ux-experimentation-evidence'."
+    },
+    {
+      "path": "skills/web-ux-feedback-status/SKILL.md",
+      "sha256": "10e37d716a3447107c9cff4840e789536119b402a134232342c661b0bf208403",
+      "purpose": "Core capability definition for skill 'web-ux-feedback-status'."
+    },
+    {
+      "path": "skills/web-ux-feedback-status/references/source-catalog.md",
+      "sha256": "9431b56a605e17c8fabe509c95cf11e437f29072c52a4cd8413ccd3cebe9796e",
+      "purpose": "Supporting artifact for skill 'web-ux-feedback-status'."
+    },
+    {
+      "path": "skills/web-ux-forms-conversion/SKILL.md",
+      "sha256": "9c4515ff2c132548cbb0086fba74db385e78f9b6fd921e092c5a37a933330189",
+      "purpose": "Core capability definition for skill 'web-ux-forms-conversion'."
+    },
+    {
+      "path": "skills/web-ux-forms-conversion/references/source-catalog.md",
+      "sha256": "4aaf3b718ba971e6f40c7297412f9dbe6ce6605dc7f7668d87112d0853b8cf8f",
+      "purpose": "Supporting artifact for skill 'web-ux-forms-conversion'."
+    },
+    {
+      "path": "skills/web-ux-information-architecture/SKILL.md",
+      "sha256": "aae3aa55d5a487d6f21829d65af6b93897c1d19472c5156e19c3774e597b7a3b",
+      "purpose": "Core capability definition for skill 'web-ux-information-architecture'."
+    },
+    {
+      "path": "skills/web-ux-account-identity-flows/references/source-catalog.md",
+      "sha256": "2c09f28ab8b8aba985afb40673f7d0a0c4778f1b77232fb36a8ba5972efa3d09",
+      "purpose": "Supporting artifact for skill 'web-ux-account-identity-flows'."
+    },
+    {
+      "path": "skills/web-ux-visual-consistency/references/source-catalog.md",
+      "sha256": "21742313c0926e034ad95685b056bf1b0cd52e9e7a67780642bb7ea424623816",
+      "purpose": "Supporting artifact for skill 'web-ux-visual-consistency'."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "pluginId": "PLG-10",
+  "pluginName": "mobile-maui-ux",
+  "pluginVersion": "1.0.0",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "ef67f486df31a3c2652eef7a15c8ad95e77db3e70840b71f250e21185a30bb06",
+      "purpose": "Plugin manifest metadata and dependency declarations."
+    },
+    {
+      "path": "skills/prototype-mobile-ui/SKILL.md",
+      "sha256": "aa0fd67e52740e3b65ea607c43ac29c45624e31071213cd3d312d3f178a6835b",
+      "purpose": "Core capability definition for skill 'prototype-mobile-ui'."
+    },
+    {
+      "path": "skills/mobile-release-readiness/references/source-catalog.md",
+      "sha256": "c20b668e8b9d5f223cbcdb4caa5cbda44a4f2ac156586cc09ca58dbeffafbfde",
+      "purpose": "Supporting artifact for skill 'mobile-release-readiness'."
+    },
+    {
+      "path": "skills/mobile-release-readiness/SKILL.md",
+      "sha256": "2627d6f2f7a5b34441b0a83f890586def9af82c726fd9eea8606ad1be00e97a8",
+      "purpose": "Core capability definition for skill 'mobile-release-readiness'."
+    },
+    {
+      "path": "skills/mobile-performance-quality-gate/references/source-catalog.md",
+      "sha256": "31ea7dd0f6774d5e459ded13f84ddf3c289d0de404deae7f08d970320aafdc51",
+      "purpose": "Supporting artifact for skill 'mobile-performance-quality-gate'."
+    },
+    {
+      "path": "skills/mobile-performance-quality-gate/SKILL.md",
+      "sha256": "87c58a0a9d1ba27aa7b055fdd921ef7ef14934f8ceac3b1e1d1f9e3d40def0c9",
+      "purpose": "Core capability definition for skill 'mobile-performance-quality-gate'."
+    },
+    {
+      "path": "skills/mobile-orchestrator/references/source-catalog.md",
+      "sha256": "17741e7d44f5a7da3b30318a7b2c7421f58af0dbb3ddcc8d9e15054726d7f378",
+      "purpose": "Supporting artifact for skill 'mobile-orchestrator'."
+    },
+    {
+      "path": "skills/mobile-orchestrator/SKILL.md",
+      "sha256": "b4ea77293da6c07a0553c827d9635cd30e64da4d54e212584340130c43cf0a08",
+      "purpose": "Core capability definition for skill 'mobile-orchestrator'."
+    },
+    {
+      "path": "skills/mobile-offline-resilience/references/source-catalog.md",
+      "sha256": "9d85a464ce994cb9b5af4f27675e030c68b14c6e1a4e21cf0e3b2d7c15f126bb",
+      "purpose": "Supporting artifact for skill 'mobile-offline-resilience'."
+    },
+    {
+      "path": "skills/mobile-offline-resilience/SKILL.md",
+      "sha256": "be7f68c8ae1a8b4bc5bcc31b8b04500ee5daaa85528fe0cc71df7782198de944",
+      "purpose": "Core capability definition for skill 'mobile-offline-resilience'."
+    },
+    {
+      "path": "skills/mobile-accessibility-quality-gate/references/source-catalog.md",
+      "sha256": "9073d00d7e592fab3f5c0aedd978e6b7f851a483631e1b7612f34eab1120aa0e",
+      "purpose": "Supporting artifact for skill 'mobile-accessibility-quality-gate'."
+    },
+    {
+      "path": "skills/mobile-accessibility-quality-gate/SKILL.md",
+      "sha256": "701b8d1278fbd98e1a7f842aa8e8b8c1c6e6a210fa5a5e7389fd70eb1f98ee45",
+      "purpose": "Core capability definition for skill 'mobile-accessibility-quality-gate'."
+    },
+    {
+      "path": "skills/design-mobile-ux/references/source-catalog.md",
+      "sha256": "57438094ee20405166162719722125fc03c8aef025d60f769c327410ec0ba280",
+      "purpose": "Supporting artifact for skill 'design-mobile-ux'."
+    },
+    {
+      "path": "skills/design-mobile-ux/SKILL.md",
+      "sha256": "c432e5734df20c85b4a350b6a9b1175e8532f929388b372a0d3bfacf9db8d1d7",
+      "purpose": "Core capability definition for skill 'design-mobile-ux'."
+    },
+    {
+      "path": "skills/build-mobile-apps/SKILL.md",
+      "sha256": "88971b86d6819626afa48722e8181ac6405822a34decce6ef61e6e166b64a2cf",
+      "purpose": "Core capability definition for skill 'build-mobile-apps'."
+    },
+    {
+      "path": "skills/build-maui-apps/references/source-ledger-template.md",
+      "sha256": "cfaedbafa3b0556fff0af17751aba61dec77d9edbfdf84455b0de6dd281575fa",
+      "purpose": "Supporting artifact for skill 'build-maui-apps'."
+    },
+    {
+      "path": "skills/build-maui-apps/references/source-catalog.md",
+      "sha256": "6dcc807f77d8dd8b39a14f1c5c74d97bf1436a0f3cc2b25a23bd8fe9c2e0d70a",
+      "purpose": "Supporting artifact for skill 'build-maui-apps'."
+    },
+    {
+      "path": "skills/build-maui-apps/SKILL.md",
+      "sha256": "60e84feafc2974973a0eba20c8bbc3eea94e20b5b052ec9380186afb47f1fe6f",
+      "purpose": "Core capability definition for skill 'build-maui-apps'."
+    },
+    {
+      "path": "prompts/execute-delivery.prompt.md",
+      "sha256": "3f95cb30768d39d2f3dd4df306c94c28be1124184ed3e192fac11e5b7d2b0039",
+      "purpose": "Prompt contract used to execute plugin-specific workflows."
+    },
+    {
+      "path": "instructions/ux-design.instructions.md",
+      "sha256": "30159d3abcc057c853d2492aa00e3600fe09508ca566f8474f7093d105211e2b",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "instructions/secure-coding.instructions.md",
+      "sha256": "647b74096502508a655973b6161ac10f646620bc63a92beec5084376a7e7630c",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "instructions/mobile-frontend.instructions.md",
+      "sha256": "73be552ba87368d343f98701f00448b85143d5e39c3e1422c7646ec761319cef",
+      "purpose": "Instruction policy asset enforcing plugin governance behavior."
+    },
+    {
+      "path": "agents/ux-designer.agent.md",
+      "sha256": "eae58b89ffb2e0db0410aad0692c5b75c1d06e1a60c4fc210f78765d743df08d",
+      "purpose": "Agent definition supporting plugin capability workflows."
+    },
+    {
+      "path": "agents/mobile-frontend-engineer.agent.md",
+      "sha256": "905c26c52fa74c4a2b91ceceb66d3d14f91038462a1b596d2425eb366e88b709",
+      "purpose": "Agent definition supporting plugin capability workflows."
+    },
+    {
+      "path": "skills/prototype-mobile-ui/references/source-catalog.md",
+      "sha256": "2549d85b1938ab650574d1d4acf2e95c846d2106a34588f157ea980cdc10cfdd",
+      "purpose": "Supporting artifact for skill 'prototype-mobile-ui'."
+    },
+    {
+      "path": "skills/usability-test-scripts/SKILL.md",
+      "sha256": "38c113ea7150c9840f62b1522ebc95f75f1f5252e669e982c1d73baf3b4b1d11",
+      "purpose": "Core capability definition for skill 'usability-test-scripts'."
+    }
+  ]
+}

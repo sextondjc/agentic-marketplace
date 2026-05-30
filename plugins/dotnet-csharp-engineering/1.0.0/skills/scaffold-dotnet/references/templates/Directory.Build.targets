@@ -1,0 +1,27 @@
+<Project>
+  <!--
+    Bootstrap Usings.cs for C# projects once they exceed a single source file.
+    This keeps import directives centralized without requiring manual file creation.
+  -->
+  <Target
+    Name="BootstrapUsingsCs"
+    BeforeTargets="CoreCompile"
+    Condition="'$(Language)' == 'C#' and '$(DesignTimeBuild)' != 'true'">
+
+    <ItemGroup>
+      <_WorkspaceCompile Include="@(Compile)"
+                         Exclude="**\bin\**;**\obj\**;Usings.cs" />
+    </ItemGroup>
+
+    <PropertyGroup>
+      <_UsingsFilePath>$(MSBuildProjectDirectory)\Usings.cs</_UsingsFilePath>
+      <_WorkspaceCompileCount>@(_WorkspaceCompile->Count())</_WorkspaceCompileCount>
+    </PropertyGroup>
+
+    <WriteLinesToFile
+      File="$(_UsingsFilePath)"
+      Overwrite="false"
+      Condition="!Exists('$(_UsingsFilePath)') and $([System.Int32]::Parse('$(_WorkspaceCompileCount)')) &gt; 1"
+      Lines="// Bootstrap file: keep project-wide import directives here.$([System.Environment]::NewLine)global using System;" />
+  </Target>
+</Project>

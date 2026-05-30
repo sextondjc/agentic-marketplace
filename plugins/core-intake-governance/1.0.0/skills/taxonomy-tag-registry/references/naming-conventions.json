@@ -1,0 +1,129 @@
+{
+  "version": "2.0.0",
+  "classificationModel": {
+    "description": "Four-layer taxonomy: Type → Lane → Domain → Function. All four must align for a name to be fully conformant.",
+    "layers": ["type", "lane", "domain", "function"]
+  },
+  "scopes": {
+    "customizations": {
+      "agents": "^(orchestrator|[a-z]+(-[a-z]+)*)$",
+      "instructions": "^[a-z]+(-[a-z]+)*\\.instructions\\.md$",
+      "prompts": "^[a-z]+(-[a-z]+)*\\.prompt\\.md$",
+      "skills": "^[a-z]+(-[a-z]+)*$",
+      "lengthExceptions": [
+        {
+          "name": "powershell-script-library",
+          "charCount": 25,
+          "justification": "Full qualifier required to distinguish from audit-powershell and the powershell.instructions.md policy file."
+        },
+        {
+          "name": "test-driven-development",
+          "charCount": 23,
+          "justification": "Canonical industry term; abbreviating to tdd would reduce discoverability for new contributors."
+        },
+        {
+          "name": "usability-test-scripts",
+          "charCount": 33,
+          "justification": "Specificity required to distinguish from design-mobile-ux and prototype-mobile-ui."
+        }
+      ]
+    },
+    "docs": {
+      "folder": "^[a-z0-9]+$",
+      "file": "^[a-z0-9]+(-[a-z0-9]+)*\\.(md|txt|json|yml|yaml)$",
+      "reserved": ["README.md", "INDEX.md"],
+      "datePrefixProhibited": true
+    },
+    "governanceReports": {
+      "canonical": {
+        "executive": "execute-customization-audit.md",
+        "typeCustomizations": "governance-audit-types-customizations.md",
+        "typeOptimization": "governance-audit-types-optimization.md",
+        "typeSkills": "governance-audit-types-skills.md"
+      },
+      "legacyToCanonical": {
+        "comprehensive-workspace-health-audit.md": "execute-customization-audit.md",
+        "audit.md": "governance-audit-types-customizations.md",
+        "optimization-factor.md": "governance-audit-types-optimization.md",
+        "full-skill-review-grid.md": "governance-audit-types-skills.md"
+      }
+    },
+    "governanceRoutines": {
+      "canonical": {
+        "executive": "execute-customization-audit",
+        "type": "governance-audit-types",
+        "item": "governance-item-audit"
+      },
+      "notes": [
+        "All governance routines must use the governance- prefix.",
+        "Canonical routine names must be short and visually discoverable by purpose (executive, type, item)."
+      ]
+    }
+  },
+  "lanes": {
+    "Planning": {
+      "intent": "Analyze intent, design, research, decide; outputs are plans, maps, decisions, or specifications.",
+      "vocabulary": ["plan", "design", "research", "analyze", "route", "refine", "learn", "draft", "define"],
+      "acceptableNounForms": ["critical-thinking", "adr-generator", "prd-generator", "writing-plans"],
+      "note": "Vocabulary drift to Execution or Review verbs in a Primary=Planning asset is a signal requiring catalog justification."
+    },
+    "Execution": {
+      "intent": "Build, generate, transform, produce concrete artifacts; outputs are code, docs, config, scripts, or applied changes.",
+      "vocabulary": ["build", "execute", "scaffold", "sync", "generate", "author", "index", "implement", "create"],
+      "acceptableNounForms": ["task-execution", "docker-dotnet", "branch-completion", "librarian", "taxonomy"],
+      "note": "Vocabulary drift to Planning or Review verbs in a Primary=Execution asset is a signal requiring catalog justification."
+    },
+    "Review": {
+      "intent": "Evaluate, validate, audit, assess, remediate; outputs are findings, scores, dispositions, or forecasts.",
+      "vocabulary": ["audit", "review", "validate", "assess", "benchmark", "summarize", "prune", "remediate", "deliver"],
+      "acceptableNounForms": ["delivery-status-grid", "current-test-coverage", "skill-review", "execute-customization-audit", "performance-research", "security-research"],
+      "note": "Vocabulary drift to Execution verbs (e.g. 'write-') in a Primary=Review asset is a known exception requiring catalog justification."
+    }
+  },
+  "domains": {
+    "governance": {
+      "keywords": ["governance", "lifecycle", "cadence", "naming", "taxonomy", "audit", "health", "optimization", "conflict", "overlap"],
+      "examples": ["audit-governance", "execute-customization-audit", "taxonomy", "optimize-customizations", "validate-customization", "sync-customizations", "summarize-governance"]
+    },
+    "engineering": {
+      "keywords": ["dotnet", "csharp", "syrx", "resilience", "refactor", "test", "tdd", "scaffold", "api", "domain", "adr"],
+      "examples": ["dotnet-refactor", "syrx-data-access", "test-driven-development", "scaffold-dotnet", "dotnet-resilience", "api-design", "domain-design", "adr-generator"]
+    },
+    "mobile": {
+      "keywords": ["maui", "mobile", "ux", "ui", "prototype", "usability"],
+      "examples": ["build-maui-apps", "design-mobile-ux", "prototype-mobile-ui", "usability-test-scripts"]
+    },
+    "data": {
+      "keywords": ["sql", "dba", "database", "schema", "syrx"],
+      "examples": ["syrx-data-access"],
+      "note": "Data domain overlaps with Engineering for Syrx assets; catalog lane assignment is authoritative."
+    },
+    "devops": {
+      "keywords": ["docker", "powershell", "cicd", "scripts", "scripting", "branch", "editorconfig", "ci", "cd"],
+      "examples": ["docker-dotnet", "audit-powershell", "powershell-script-library", "sync-editorconfig", "branch-completion"]
+    },
+    "documentation": {
+      "keywords": ["docs", "readme", "adr", "technical", "corpus", "index", "librarian", "plan", "prd", "write"],
+      "examples": ["write-technical-docs", "index-docs", "librarian", "prd-generator", "writing-plans", "prune-doc-artifacts"]
+    },
+    "metaWorkflow": {
+      "keywords": ["task", "route", "executing", "execution", "skill", "agent", "prompt", "critical", "learn", "refine", "ideas", "research", "delivery", "request", "code"],
+      "examples": ["task-execution", "task-research", "route-customization", "critical-thinking", "learn-topics", "refine-ideas", "plans", "delivery-status-grid", "request-code-review", "remediate-review", "agent-authoring", "skills-authoring", "instructions-authoring", "curate-copilot-instructions"]
+    }
+  },
+  "ontology": {
+    "description": "Lightweight relationship model. Not encoded in file names. Used for authoring guidance and drift detection.",
+    "relationships": [
+      "Asset ──belongs-to──▶ Lane (Planning | Execution | Review)",
+      "Asset ──operates-on──▶ Domain (Governance | Engineering | Mobile | Data | DevOps | Documentation | Meta-workflow)",
+      "Asset ──artifact-type-is──▶ Type (Agent | Instruction | Prompt | Skill)",
+      "Name-part ──signals──▶ [Lane-via-vocabulary, Domain-via-noun]"
+    ],
+    "practicalUses": [
+      "Authoring: pick a verb from the target lane's vocabulary, pick a noun from the target domain's keywords.",
+      "Drift detection: a skill whose name uses a Review verb but whose catalog lane is Execution is a drift signal requiring justification.",
+      "Discovery: lane + domain together allow finding assets without reading every catalog row."
+    ]
+  }
+}
+

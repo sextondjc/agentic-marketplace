@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0",
+  "id": "planning-strategy-design",
+  "name": "planning-strategy-design",
+  "version": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "description": "Planning, shaping, and strategy artifacts for multi-phase delivery.",
+  "capabilities": [
+    "Planning, shaping, and strategy artifacts for multi-phase delivery."
+  ],
+  "dependencies": [
+    "core-intake-governance"
+  ],
+  "assets": {
+    "agents": [
+      "plan-researcher.agent.md",
+      "architecture-designer.agent.md",
+      "topic-learner.agent.md",
+      "ux-designer.agent.md"
+    ],
+    "instructions": [
+      "technical-docs.instructions.md",
+      "prd.instructions.md",
+      "ux-design.instructions.md"
+    ],
+    "prompts": [
+      "review-technical-docs.prompt.md"
+    ],
+    "skills": [
+      "critical-thinking",
+      "analysis-execution",
+      "backlog-structuring",
+      "product-scope-slicing",
+      "opportunity-mapping",
+      "delivery-operating-system",
+      "delivery-orchestration",
+      "delivery-forecasting",
+      "probabilistic-forecasting",
+      "flow-metrics",
+      "experiment-design",
+      "acceptance-criteria",
+      "adr-generator",
+      "prd-generator",
+      "learn-topics",
+      "governance-delivery",
+      "refine-ideas"
+    ]
+  }
+}

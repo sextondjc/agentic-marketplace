@@ -1,0 +1,152 @@
+{
+  "pluginId": "PLG-04",
+  "pluginName": "plugin-authoring-lifecycle",
+  "pluginVersion": "1.0.0",
+  "author": "David Sexton",
+  "sourceCommit": "16d627d5eb2b",
+  "generatedAtUtc": "2026-05-30T22:33:44.1390707Z",
+  "digestAlgorithm": "SHA-256",
+  "artifactEntries": [
+    {
+      "path": "plugin.json",
+      "sha256": "f165226489dc78849a8e4ecb81797048a0d3e24e7f037486743bad54375352df"
+    },
+    {
+      "path": "skills/agent-plugin-setup/SKILL.md",
+      "sha256": "7545dd4f6bd6c676424d42eb2a1f49a2dda3507ace5328febfccf2748c1c54f9"
+    },
+    {
+      "path": "skills/agent-plugin-setup/references/QUICK_START.md",
+      "sha256": "00d8fa1284b5c29260ddb4733b1960bd09519cac571dfcfc84248b191304769c"
+    },
+    {
+      "path": "skills/agent-plugin-setup/references/source-ledger.md",
+      "sha256": "b5e7774079ed42c3561e1a420f8459f9bfe397bd4a1d048291942c1b934e923b"
+    },
+    {
+      "path": "skills/agent-plugin-tools-integration/SKILL.md",
+      "sha256": "a4a100093b131b51b9a51583f376700828443c2232a4bbd80fdce73c05898788"
+    },
+    {
+      "path": "skills/instructions-authoring/SKILL.md",
+      "sha256": "2fdef7dd53513f3fc2df269b9e59d70f91a015a3b75314fc6ec0d8ccf53a1791"
+    },
+    {
+      "path": "skills/instructions-authoring/references/customization-generation-template.md",
+      "sha256": "b0e25429e290a3ef48c71a015743a29a84d934e3c4abc889ba9cbe36d3e38379"
+    },
+    {
+      "path": "skills/agent-plugin-security-hardening/SKILL.md",
+      "sha256": "e1a1384ecd162b11f06f8587843623662e23384af5a52f99ff2eb699ff6822d1"
+    },
+    {
+      "path": "skills/route-customization/SKILL.md",
+      "sha256": "f2af3bedd821e082867293f0866e282e2aa34ff39c80e898cecb0a19acb7c3b2"
+    },
+    {
+      "path": "skills/skills-authoring/anthropic-best-practices.md",
+      "sha256": "b68a9cc07a949c7b46d6ca0b1063647aa66a8bced612ee96fbe862e140bddd96"
+    },
+    {
+      "path": "skills/skills-authoring/graphviz-conventions.dot",
+      "sha256": "b18a02773875f6c7b92f2a260e88550c92a62549b0009df9d680f7e9541d0ecc"
+    },
+    {
+      "path": "skills/skills-authoring/persuasion-principles.md",
+      "sha256": "c3c84f572a51dd8b6d4fc6e5cbdc2bc3b9e07ba381a45bdabfce7ad2894dd828"
+    },
+    {
+      "path": "skills/skills-authoring/render-graphs.js",
+      "sha256": "e1fa7aec80a6c72a4f4a78233e4461c1f57a1b168beb020d889fb85b8e6e389f"
+    },
+    {
+      "path": "skills/skills-authoring/SKILL.md",
+      "sha256": "a03788780c3efe0e051abba3584ce88a072d7431d645f26dc360b42e016af3b0"
+    },
+    {
+      "path": "skills/skills-authoring/testing-skills-with-subagents.md",
+      "sha256": "cb1a96823fc19f6f64b023fe639238d933531444084a64048ded36e7b0307a9c"
+    },
+    {
+      "path": "skills/route-customization/references/output-template.md",
+      "sha256": "8bcec8c80ddbbeacdc1f9f4a6217d8247920e85d32c0174eb94c2bb6f0203e48"
+    },
+    {
+      "path": "skills/skills-authoring/examples/CLAUDE_MD_TESTING.md",
+      "sha256": "0b379a3415e185d3c434b3ad283d8aa132f3022c2a4f210f168865b5986bcef0"
+    },
+    {
+      "path": "skills/agent-plugin-publishing/SKILL.md",
+      "sha256": "cada42adaf4f506c991bf06107a712bb3cf2b08a2636b53c1ad74de4051af6c0"
+    },
+    {
+      "path": "skills/agent-plugin-integrity/references/templates/plugin-manifest.schema.json",
+      "sha256": "7fe60d7940f33deafac349bcfcf3b021a592ab3e747e663545883a168538f502"
+    },
+    {
+      "path": "agents/workspace-scaffolder.agent.md",
+      "sha256": "45728a41635478a25424c2b0e8c67ccc73c0795498cc26d76b77da2ed0814e52"
+    },
+    {
+      "path": "instructions/governance-naming-conventions.instructions.md",
+      "sha256": "d3de0dee13265b59d79e1c3b5c3fa6cb1d69211dda19d94fcdc89a8ec143d5c9"
+    },
+    {
+      "path": "instructions/request-economy.instructions.md",
+      "sha256": "c0b5d857d31be675a1795344a12ec10bd393ea4ae6dac532f28afdea3d920268"
+    },
+    {
+      "path": "instructions/secure-coding.instructions.md",
+      "sha256": "647b74096502508a655973b6161ac10f646620bc63a92beec5084376a7e7630c"
+    },
+    {
+      "path": "prompts/workspace-scaffolder.prompt.md",
+      "sha256": "d15b0a2b2502222376e580398d1026229e3b8724b4e7d8e203e9327ca7755a74"
+    },
+    {
+      "path": "skills/agent-authoring/SKILL.md",
+      "sha256": "bccbfce8fd8809c07eba33c12d3750e097a17cba03be5f60cd9a2c9ab6f4b14b"
+    },
+    {
+      "path": "skills/agent-plugin-integrity/references/templates/readme-verification-snippet.md",
+      "sha256": "c2ce8ce69216b870594fff2acdac3dc003da2a757b04ca36139665bcef90d1cd"
+    },
+    {
+      "path": "skills/agent-authoring/references/source-catalog.md",
+      "sha256": "001f777abd15597caca095f8aebbad4ef2ca26f6277b05e4221897e81eb5c5e1"
+    },
+    {
+      "path": "skills/agent-plugin-implementation-extension/SKILL.md",
+      "sha256": "54322ad1ca236aad40785cf571d468fadf961cb3cd23143973fdf852441327e9"
+    },
+    {
+      "path": "skills/agent-plugin-implementation-markdown/SKILL.md",
+      "sha256": "0ffa375aebb0c7f0a1a9f702c967b987fcbc80f7be2b3fe05858a2234f188937"
+    },
+    {
+      "path": "skills/agent-plugin-integrity/SKILL.md",
+      "sha256": "f52d9c09d631374dcdb1c3b1cd075e328b9bdca5f47e88546fa420249c5e338a"
+    },
+    {
+      "path": "skills/agent-plugin-integrity/references/source-catalog.md",
+      "sha256": "5d9284c26b99760736a779293ad6b86af754f7a5ce1aea20dea44a9b595d9908"
+    },
+    {
+      "path": "skills/agent-plugin-integrity/references/verification-manifest-template.md",
+      "sha256": "4d1152a8dcee3fed02a3eff3fba9f6adf5ab5f6e1b062d4b575da4c08fe1ed49"
+    },
+    {
+      "path": "skills/agent-plugin-integrity/references/scripts/invoke-agent-plugin-integrity.ps1",
+      "sha256": "c682174132dc739025a415de6936ffa58ad7ebf0ecddb32074e62f07d86382df"
+    },
+    {
+      "path": "skills/agent-plugin-design/SKILL.md",
+      "sha256": "65fd187ca4302b5ade44d79881abe793a4ee2981da1119f0b2234f67afbd8322"
+    },
+    {
+      "path": "skills/skills-authoring/references/source-catalog.md",
+      "sha256": "00f36bf0d4c713a3d15cba2c94e0d35d818abdf3ade0cfd393964a73e1d8f83f"
+    }
+  ],
+  "aggregateDigest": "89897c6b68d867a489875ee962755df848be80e6f99b42b7e2915df0eeef6371"
+}
